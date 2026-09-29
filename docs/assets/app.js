@@ -5,13 +5,28 @@
 
 "use strict";
 
-// ---------- design tokens for charts (dataviz reference palette, light mode) ----------
-const C = {
+// ---------- theme (D26): DARK by default; visitors can switch to light or "auto" (follows the device) ----------
+const THEME_KEY = "wf-theme";
+const DEFAULT_THEME = "dark";
+const savedTheme = () => { try { return localStorage.getItem(THEME_KEY) || DEFAULT_THEME; } catch { return DEFAULT_THEME; } };
+const DEVICE_DARK = window.matchMedia("(prefers-color-scheme: dark)");
+const DARK = savedTheme() === "dark" || (savedTheme() === "auto" && DEVICE_DARK.matches);
+
+// ---------- design tokens for charts (dataviz reference palette; its dark-mode steps at night) ----------
+const C = DARK ? {
+  blue: "#3987e5", orange: "#d95926", aqua: "#199e70", yellow: "#c98500", magenta: "#d55181", green: "#008300",
+  red: "#e66767", neutral: "#5d625d", ink: "#eef0ec", ink2: "#b9beb7", muted: "#8b918a", grid: "rgba(255,255,255,.07)",
+  accent: "#7bb851", surface: "#202421", axis: "rgba(255,255,255,.18)", mark: "rgba(255,255,255,.25)",
+  tipBg: "rgba(34,38,35,.97)", tipLine: "rgba(255,255,255,.1)",
+} : {
   blue: "#2a78d6", orange: "#eb6834", aqua: "#1baf7a", yellow: "#eda100", magenta: "#e87ba4", green: "#008300",
   red: "#e34948", neutral: "#b4b6b0", ink: "#15171a", ink2: "#4a4e52", muted: "#7d8280", grid: "rgba(20,24,20,.07)",
-  accent: "#4b7d2b",
+  accent: "#4b7d2b", surface: "#ffffff", axis: "rgba(20,24,20,.15)", mark: "rgba(20,24,20,.2)",
+  tipBg: "rgba(255,255,255,.96)", tipLine: "rgba(20,24,20,.08)",
 };
-const SEQ = ["#f2f6fb", "#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95"];
+// Sequential ramp: light = near-white to deep blue; dark = near the surface to bright blue.
+const SEQ = DARK ? ["#1b2330", "#1c3a63", "#184f95", "#1c5cab", "#256abf", "#2a78d6", "#3987e5"]
+                 : ["#f2f6fb", "#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95"];
 const JOB_TYPE_COLOR = {
   "BI / dashboard analyst": C.blue, "Business-facing analyst": C.orange, "Python + SQL analyst": C.aqua,
   "Excel / reporting analyst": C.yellow, "Cloud data analyst": C.magenta, "Few skills listed": C.green,
@@ -59,13 +74,38 @@ function renderChrome(page, data) {
   document.body.insertAdjacentHTML("afterbegin",
     `<a class="skip" href="#main">Skip to content</a>
      <header class="site-head"><a class="brand" href="index.html">${LOGO}<span>WorkForce AI</span></a>
-     <nav class="nav" aria-label="Pages">${nav}</nav></header>`);
+     <nav class="nav" aria-label="Pages">${nav}</nav>
+     <button type="button" class="theme-toggle" id="theme-toggle"></button></header>`);
+  wireThemeToggle();
   const w = data.meta.data_window;
   document.body.insertAdjacentHTML("beforeend",
     `<footer class="site-foot glass">
        <div>Built by <strong>Dipayan &amp; Sayak</strong>. Data collected ${w.first_run.slice(0, 10)} → ${w.last_run.slice(0, 10)}.</div>
        <div>Job &amp; salary data: <a href="https://www.adzuna.in" target="_blank" rel="noopener">The Adzuna API</a>. Aggregated results only; no job listings are published.</div>
      </footer>`);
+}
+
+// ---------- theme switch: Dark (default) -> Light -> Auto -> Dark ----------
+const THEME_ICON = {
+  auto: '<circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17z" fill="currentColor" stroke="none"/>',
+  light: '<circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/>',
+  dark: '<path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/>',
+};
+const THEME_LABEL = { dark: "Theme: dark. Switch to light", light: "Theme: light. Switch to automatic", auto: "Theme: automatic (follows your device). Switch to dark" };
+
+function wireThemeToggle() {
+  const btn = document.getElementById("theme-toggle");
+  const mode = savedTheme();
+  btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${THEME_ICON[mode]}</svg>`;
+  btn.setAttribute("aria-label", THEME_LABEL[mode]);
+  btn.title = { auto: "Auto (follows your device)", light: "Light", dark: "Dark" }[mode];
+  btn.addEventListener("click", () => {
+    const next = { dark: "light", light: "auto", auto: "dark" }[mode];
+    try { localStorage.setItem(THEME_KEY, next); } catch { /* private mode: the default (dark) is used */ }
+    location.reload();  // simplest way to redraw every chart in the new colours
+  });
+  // In Auto, follow the device live (e.g. it switches to dark at sunset).
+  if (mode === "auto") DEVICE_DARK.addEventListener("change", () => location.reload());
 }
 
 // ---------- motion ----------
@@ -113,7 +153,7 @@ function base(extra = {}) {
     textStyle: { fontFamily: FONT, color: C.ink2 },
     aria: { enabled: true },
     tooltip: {
-      backgroundColor: "rgba(255,255,255,.96)", borderColor: "rgba(20,24,20,.08)", borderWidth: 1,
+      backgroundColor: C.tipBg, borderColor: C.tipLine, borderWidth: 1,
       textStyle: { color: C.ink, fontFamily: FONT, fontSize: 13 }, extraCssText: "border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.1);",
     },
     grid: { left: 12, right: 24, top: 18, bottom: 12, containLabel: true },
@@ -121,7 +161,7 @@ function base(extra = {}) {
   };
 }
 const axisStyle = {
-  axisLine: { lineStyle: { color: "rgba(20,24,20,.15)" } }, axisTick: { show: false },
+  axisLine: { lineStyle: { color: C.axis } }, axisTick: { show: false },
   splitLine: { lineStyle: { color: C.grid } }, axisLabel: { color: C.muted },
 };
 
@@ -175,23 +215,24 @@ function donutOption(items, colorOf, width = 800) {
               formatter: (name) => `${name}  ${pct(items.find((i) => i.name === name).value / total)}` },
     series: [{ type: "pie", radius: narrow ? ["38%", "54%"] : ["56%", "78%"], center: narrow ? ["50%", "30%"] : ["32%", "50%"],
                avoidLabelOverlap: true, padAngle: 1,
-               itemStyle: { borderRadius: 8, borderColor: "rgba(255,255,255,.9)", borderWidth: 2 },
+               itemStyle: { borderRadius: 8, borderColor: C.surface, borderWidth: 2 },
                label: { show: false }, labelLine: { show: false },
                data: items.map((it, i) => ({ ...it, itemStyle: { color: colorOf ? colorOf(it.name) : palette[i % palette.length] } })) }],
   });
 }
 
 function heatOption(rowNames, colNames, matrix) {
-  // White text on the dark (high) cells, dark text on the light ones, so every label stays readable.
+  // Light theme: white text on the dark (high) cells, dark text on light ones.
+  // Dark theme: the ramp runs dark -> bright, so light text reads on every cell.
   const data = [];
-  matrix.forEach((row, y) => row.forEach((v, x) => data.push({ value: [x, y, v], label: { color: v > 0.5 ? "#fff" : C.ink } })));
+  matrix.forEach((row, y) => row.forEach((v, x) => data.push({ value: [x, y, v], label: { color: DARK || v > 0.5 ? "#fff" : C.ink } })));
   return base({
     grid: { left: 12, right: 12, top: 8, bottom: 8, containLabel: true },
     tooltip: { ...base().tooltip, formatter: (p) => `${esc(rowNames[p.value[1]])} · ${esc(colNames[p.value[0]])}<br><b>${pct(p.value[2])}</b>` },
     xAxis: { type: "category", data: colNames, ...axisStyle, splitLine: { show: false }, axisLabel: { color: C.ink2, rotate: 35, interval: 0 } },
     yAxis: { type: "category", data: rowNames, inverse: true, ...axisStyle, splitLine: { show: false }, axisLabel: { color: C.ink2 } },
     visualMap: { show: false, min: 0, max: 1, inRange: { color: SEQ } },
-    series: [{ type: "heatmap", data, itemStyle: { borderColor: "rgba(255,255,255,.9)", borderWidth: 2, borderRadius: 4 },
+    series: [{ type: "heatmap", data, itemStyle: { borderColor: C.surface, borderWidth: 2, borderRadius: 4 },
                label: { show: true, formatter: (p) => pct(p.value[2]), color: C.ink, fontSize: 11 } }],
   });
 }
@@ -298,10 +339,10 @@ function pageSkills(D) {
     yAxis: { type: "value", name: "pay difference", nameTextStyle: { color: C.muted }, ...axisStyle, axisLabel: { color: C.muted, formatter: (v) => signed(v * 100) } },
     series: Object.keys(colorOf).map((sig) => ({
       name: sig, type: "scatter", symbolSize: 16,
-      itemStyle: { color: colorOf[sig], borderColor: "#fff", borderWidth: 2 },
+      itemStyle: { color: colorOf[sig], borderColor: C.surface, borderWidth: 2 },
       label: { show: true, position: "top", color: C.ink2, formatter: (p) => p.data.name },
       data: q.filter((r) => r.pay_signal === sig).map((r) => ({ name: r.skill, value: [r.demand_share, r.pct_effect / 100], lo: r.pct_low, hi: r.pct_high, n: r.postings_with_skill })),
-      markLine: sig === "leans higher pay" ? { silent: true, symbol: "none", lineStyle: { color: "rgba(20,24,20,.2)", type: "solid" }, label: { show: false },
+      markLine: sig === "leans higher pay" ? { silent: true, symbol: "none", lineStyle: { color: C.mark, type: "solid" }, label: { show: false },
         data: [{ yAxis: 0 }, { xAxis: 0.25 }] } : undefined,
     })),
   }));
@@ -357,7 +398,7 @@ function pageSalary(D) {
           const a = api.coord([api.value(1), api.value(0)]), b = api.coord([api.value(2), api.value(0)]);
           return { type: "line", shape: { x1: a[0], y1: a[1], x2: b[0], y2: b[1] }, style: { stroke: C.neutral, lineWidth: 3, lineCap: "round" } };
         } },
-      { type: "scatter", symbolSize: 15, data: main.map((r) => ({ value: r.pct_effect, itemStyle: { color: r.pct_effect > 0 ? C.blue : C.red, borderColor: "#fff", borderWidth: 2 } })),
+      { type: "scatter", symbolSize: 15, data: main.map((r) => ({ value: r.pct_effect, itemStyle: { color: r.pct_effect > 0 ? C.blue : C.red, borderColor: C.surface, borderWidth: 2 } })),
         markLine: { silent: true, symbol: "none", label: { show: false }, lineStyle: { color: C.muted, type: "solid" }, data: [{ xAxis: 0 }] } },
     ],
   }));
@@ -399,7 +440,7 @@ function pageTypes(D) {
       label: { show: true, color: C.ink2, formatter: (p) => p.data.name, position: "top" },
       labelLayout: { hideOverlap: false, moveOverlap: "shiftY" },
       data: t.job_types.map((r) => ({ name: r.job_type, value: [r.avg_skills_listed, (pay[r.job_type]?.pct_vs_bi_dashboard ?? 0) / 100], n: pay[r.job_type]?.salaried_postings,
-        itemStyle: { color: JOB_TYPE_COLOR[r.job_type], borderColor: "#fff", borderWidth: 2 } })) }],
+        itemStyle: { color: JOB_TYPE_COLOR[r.job_type], borderColor: C.surface, borderWidth: 2 } })) }],
   }));
   numbersTable("n-toolspay", t.job_type_pay);
   const cols = Object.keys(t.job_types[0]).filter((k) => k.startsWith("share_"));
@@ -477,7 +518,7 @@ function pageMarket(D) {
     xAxis: { type: "category", data: tr.map((r) => r.date), ...axisStyle, splitLine: { show: false }, axisLabel: { color: C.ink2 } },
     yAxis: { type: "value", min: 0, ...axisStyle },
     series: [{ type: "line", data: tr.map((r) => r.open_postings), smooth: true, symbolSize: 9, lineStyle: { width: 2.5, color: C.blue },
-      itemStyle: { color: C.blue, borderColor: "#fff", borderWidth: 2 },
+      itemStyle: { color: C.blue, borderColor: C.surface, borderWidth: 2 },
       areaStyle: { color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{ offset: 0, color: "rgba(42,120,214,.22)" }, { offset: 1, color: "rgba(42,120,214,0)" }]) } }],
   }));
   numbersTable("n-trend", tr);
