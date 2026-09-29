@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Market | WorkForce AI</title>
+  <meta name="description" content="Fresher reality, AI and automation demand, remote work, education, and how fresh India's analyst job postings are.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect x='1' y='10' width='10' height='15' rx='3' fill='%23365e1c'/%3E%3Crect x='14' y='1' width='11' height='11' rx='3' fill='%235b9234'/%3E%3Crect x='14' y='15' width='11' height='10' rx='3' fill='%23a9c98a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body data-page="market">
+<main id="main" class="wrap">
+  <header class="page-head">
+    <div><h1>The wider market</h1><p>What entry-level jobs need, how much AI and remote work show up, what education is asked for, and how fresh the postings are.</p></div>
+    <div class="pills"><span class="pill"><span class="dot"></span><span data-window>–</span></span></div>
+  </header>
+
+  <div class="section-head reveal" style="margin-top:8px"><h2>Fresher reality</h2></div>
+  <div class="grid">
+    <div class="grid g2">
+      <section class="card glass reveal" aria-labelledby="t-levelmix">
+        <div class="card-head"><h3 id="t-levelmix">Experience level of Data Analyst jobs</h3></div>
+        <div class="chart" id="c-levelmix"></div>
+        <div id="n-levelmix"></div>
+        <p class="note">Level from the job title first (Junior, Senior, Lead...), otherwise from the years mentioned.</p>
+      </section>
+      <section class="card glass reveal" aria-labelledby="t-years">
+        <div class="card-head"><h3 id="t-years">Years of experience asked for</h3></div>
+        <div class="chart" id="c-years"></div>
+        <p class="note" id="years-note"></p>
+        <div id="n-years"></div>
+      </section>
+    </div>
+    <section class="card glass reveal" aria-labelledby="t-fresher">
+      <div class="card-head"><h3 id="t-fresher">What junior jobs ask for, compared with all jobs</h3></div>
+      <div class="chart" id="c-fresher"></div>
+      <p class="note" id="fresher-note"></p>
+      <div id="n-fresher"></div>
+    </section>
+  </div>
+
+  <div class="section-head reveal section"><h2>AI, work mode &amp; education</h2>
+    <p>From full-text search on Data Analyst jobs: these words usually sit in the part of the ad we can't see.</p></div>
+  <div class="grid g3">
+    <section class="card glass reveal" aria-labelledby="t-mode">
+      <div class="card-head"><h3 id="t-mode">Remote, hybrid or not stated?</h3></div>
+      <div class="chart" id="c-mode"></div>
+      <div id="n-mode"></div>
+      <p class="note">"Not stated" usually means on-site, but we can't be sure, so we don't guess.</p>
+    </section>
+    <section class="card glass reveal" aria-labelledby="t-ai">
+      <div class="card-head"><h3 id="t-ai">AI &amp; automation mentions</h3></div>
+      <div class="chart" id="c-ai"></div>
+      <div id="n-ai"></div>
+    </section>
+    <section class="card glass reveal" aria-labelledby="t-edu">
+      <div class="card-head"><h3 id="t-edu">Education mentioned</h3></div>
+      <div class="chart" id="c-edu"></div>
+      <div id="n-edu"></div>
+    </section>
+  </div>
+
+  <div class="section-head reveal section"><h2>Market trends</h2>
+    <p>Trends grow with every collection run. With only a few runs so far, treat these as early signals.</p></div>
+  <div class="grid g2">
+    <section class="card glass reveal" aria-labelledby="t-trend">
+      <div class="card-head"><h3 id="t-trend">Open analyst postings per collection run</h3></div>
+      <div class="chart" id="c-trend"></div>
+      <div id="n-trend"></div>
+    </section>
+    <section class="card glass reveal" aria-labelledby="t-fresh">
+      <div class="card-head"><h3 id="t-fresh">How fresh are the open postings?</h3></div>
+      <div class="chart" id="c-fresh"></div>
+      <div id="n-fresh"></div>
+      <p class="note">Postings over a year old are mostly never-expiring recruiter ads; the salary analysis uses postings under a year old.</p>
+    </section>
+  </div>
+</main>
+</body>
+</html>

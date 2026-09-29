@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skills | WorkForce AI</title>
+  <meta name="description" content="Which skills Indian Data Analyst jobs ask for, how often, and which go with higher pay.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect x='1' y='10' width='10' height='15' rx='3' fill='%23365e1c'/%3E%3Crect x='14' y='1' width='11' height='11' rx='3' fill='%235b9234'/%3E%3Crect x='14' y='15' width='11' height='10' rx='3' fill='%23a9c98a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body data-page="skills">
+<main id="main" class="wrap">
+  <header class="page-head">
+    <div><h1>Skills</h1><p>Which skills Data Analyst jobs ask for, how often they appear together, and how the mix changes with seniority.</p></div>
+    <div class="pills"><span class="pill"><span class="dot"></span><span data-window>–</span></span></div>
+  </header>
+
+  <div class="grid">
+    <section class="card glass reveal" aria-labelledby="t-map">
+      <div class="card-head"><h3 id="t-map">The skill map: how common is it, and does it pay?</h3><span class="tag">same experience level &amp; city</span></div>
+      <p class="note" style="margin:0 0 8px">Right = asked for more often. Up = higher advertised pay. Colour = whether the pay signal held in all 4 versions of our model.</p>
+      <div class="chart tall" id="c-map"></div>
+      <p class="note" id="map-note"></p>
+      <div id="n-map"></div>
+    </section>
+
+    <div class="grid g2">
+      <section class="card glass reveal" aria-labelledby="t-demand">
+        <div class="card-head"><h3 id="t-demand">Requirements scorecard</h3><span class="tag">share of Data Analyst jobs</span></div>
+        <div class="chart tall" id="c-demand"></div>
+        <div id="n-demand"></div>
+      </section>
+      <section class="card glass reveal" aria-labelledby="t-combos">
+        <div class="card-head"><h3 id="t-combos">Skills that come together</h3>
+          <div class="chips" id="combo-toggle" role="group" aria-label="Combination size">
+            <button type="button" class="chip" aria-pressed="true" data-k="2">Pairs</button>
+            <button type="button" class="chip" aria-pressed="false" data-k="3">Triples</button></div></div>
+        <div class="chart tall" id="c-combos"></div>
+        <div id="n-combos"></div>
+      </section>
+    </div>
+
+    <section class="card glass reveal" aria-labelledby="t-cooc">
+      <div class="card-head"><h3 id="t-cooc">How often each pair of skills appears in the same job</h3><span class="tag">diagonal = the skill on its own</span></div>
+      <div class="chart" style="height:560px" id="c-cooc"></div>
+      <div id="n-cooc"></div>
+    </section>
+
+    <section class="card glass reveal" aria-labelledby="t-levels">
+      <div class="card-head"><h3 id="t-levels">Junior vs senior: which skills rise with seniority?</h3></div>
+      <div class="chart" id="c-levels"></div>
+      <p class="note" id="levels-note"></p>
+      <div id="n-levels"></div>
+    </section>
+  </div>
+</main>
+</body>
+</html>

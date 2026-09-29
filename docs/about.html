@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | WorkForce AI</title>
+  <meta name="description" content="How WorkForce AI was built: data sources, pipeline, methods, honest limits, and data credit.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect x='1' y='10' width='10' height='15' rx='3' fill='%23365e1c'/%3E%3Crect x='14' y='1' width='11' height='11' rx='3' fill='%235b9234'/%3E%3Crect x='14' y='15' width='11' height='10' rx='3' fill='%23a9c98a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body data-page="about">
+<main id="main" class="wrap">
+  <header class="page-head">
+    <div><h1>How we built it</h1><p>A small data-research product: collect, clean, analyse, compare, visualise, explain.</p></div>
+  </header>
+
+  <div class="grid g2">
+    <section class="card glass reveal" aria-labelledby="t-data">
+      <div class="card-head"><h3 id="t-data">The data</h3></div>
+      <p>Live analyst job postings in India from the official <a href="https://www.adzuna.in" target="_blank" rel="noopener">Adzuna API</a>,
+        plus the public job boards of ~25 companies. Collected <span id="about-window">–</span>.</p>
+      <p>We deliberately did <strong>not</strong> scrape Naukri, Indeed or LinkedIn: their terms forbid it.</p>
+      <p class="note">Population: <span id="about-pop">–</span>.</p>
+    </section>
+    <section class="card glass reveal" aria-labelledby="t-methods">
+      <div class="card-head"><h3 id="t-methods">The methods</h3></div>
+      <p><strong>Skill demand:</strong> Adzuna returns only 500 characters of each ad but searches the full text, so every skill is one
+        full-text query. In the first 500 characters SQL appears in ~6% of ads; in the full text, in 68%.</p>
+      <p><strong>Salary:</strong> regression of log(advertised salary) on skills, holding experience level and city fixed, with robust
+        errors and 3 robustness checks.</p>
+      <p><strong>Job types:</strong> k-means clustering (k = 6) on each job's skill profile.</p>
+    </section>
+    <section class="card glass reveal" aria-labelledby="t-limits">
+      <div class="card-head"><h3 id="t-limits">Limits, stated plainly</h3></div>
+      <ul style="margin:0;padding-left:1.1rem;color:var(--ink-2)">
+        <li>Only ~15% of ads list a salary, and big employers rarely do, so salary results mostly describe smaller companies and startups.</li>
+        <li>Salary effects are associations in advertised pay, not proof that a skill causes higher pay.</li>
+        <li>Rare skills (AWS, Azure, ML, GenAI, A/B testing) have too few salaried jobs to measure pay.</li>
+        <li>Trends need more collection runs.</li>
+      </ul>
+    </section>
+    <section class="card glass reveal" aria-labelledby="t-team">
+      <div class="card-head"><h3 id="t-team">Team &amp; credit</h3></div>
+      <p>Built by <strong>Dipayan &amp; Sayak</strong>. Every decision and its reasoning is logged in the project's decision log.</p>
+      <p>Job and salary data: <a href="https://www.adzuna.in" target="_blank" rel="noopener">The Adzuna API</a>, used for personal research.
+        No individual listings are published: this site shows aggregated results and a de-identified table only.</p>
+      <p class="note">Built with Python, SQL, pandas, statsmodels, scikit-learn and ECharts.</p>
+    </section>
+  </div>
+</main>
+</body>
+</html>

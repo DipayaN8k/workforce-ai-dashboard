@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salary | WorkForce AI</title>
+  <meta name="description" content="Which skills go with higher advertised pay for Indian Data Analyst jobs, compared at the same experience level and city.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect x='1' y='10' width='10' height='15' rx='3' fill='%23365e1c'/%3E%3Crect x='14' y='1' width='11' height='11' rx='3' fill='%235b9234'/%3E%3Crect x='14' y='15' width='11' height='10' rx='3' fill='%23a9c98a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body data-page="salary">
+<main id="main" class="wrap">
+  <header class="page-head">
+    <div><h1>Salary</h1><p>Advertised salaries only. The main model uses <strong id="salary-sample">–</strong> Data Analyst jobs posted
+      within the last year. Only about 15% of Indian job ads list a salary, and big companies rarely do.</p></div>
+    <div class="pills"><span class="pill"><span class="dot"></span><span data-window>–</span></span></div>
+  </header>
+
+  <div class="grid">
+    <section class="card glass reveal" aria-labelledby="t-effects">
+      <div class="card-head"><h3 id="t-effects">Which skills go with higher pay?</h3><span class="tag">same experience level &amp; city</span></div>
+      <div class="chart tall" id="c-effects"></div>
+      <p class="note">Dot = best estimate. Grey line = 95% range: if it crosses 0, we can't be sure the skill changes pay.
+        The table includes 3 robustness checks (all posting ages, without monthly-converted salaries, no controls).</p>
+      <div id="n-effects"></div>
+    </section>
+
+    <div class="grid g2">
+      <section class="card glass reveal" aria-labelledby="t-dist">
+        <div class="card-head"><h3 id="t-dist">Salary distribution</h3>
+          <div class="chips" id="dist-toggle" role="group" aria-label="Population">
+            <button type="button" class="chip" aria-pressed="true" data-k="all_analyst_roles">All analyst roles</button>
+            <button type="button" class="chip" aria-pressed="false" data-k="data_analyst">Data Analyst</button></div></div>
+        <div class="chart" id="c-dist"></div>
+        <p class="note">Advertised yearly salary, ₹ lakh.</p>
+        <div id="n-dist"></div>
+      </section>
+      <section class="card glass reveal" aria-labelledby="t-bytype">
+        <div class="card-head"><h3 id="t-bytype">Median salary by company type</h3><span class="tag">all analyst roles</span></div>
+        <div class="chart" id="c-bytype"></div>
+        <p class="note">Types with fewer than 5 salaried jobs are hidden; n = salaried jobs.</p>
+        <div id="n-bytype"></div>
+      </section>
+    </div>
+  </div>
+</main>
+</body>
+</html>

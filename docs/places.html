@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cities &amp; companies | WorkForce AI</title>
+  <meta name="description" content="Where India's analyst jobs are, which cities pay more, and how industries differ in the skills they want.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect x='1' y='10' width='10' height='15' rx='3' fill='%23365e1c'/%3E%3Crect x='14' y='1' width='11' height='11' rx='3' fill='%235b9234'/%3E%3Crect x='14' y='15' width='11' height='10' rx='3' fill='%23a9c98a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body data-page="places">
+<main id="main" class="wrap">
+  <header class="page-head">
+    <div><h1>Cities &amp; companies</h1><p>Where the jobs are, which cities advertise higher pay, and how industries differ in what they hire for.</p></div>
+    <div class="pills"><span class="pill"><span class="dot"></span><span data-window>–</span></span></div>
+  </header>
+
+  <div class="grid">
+    <div class="grid g2">
+      <section class="card glass reveal" aria-labelledby="t-where">
+        <div class="card-head"><h3 id="t-where">Where are the jobs?</h3><span class="tag">analyst postings</span></div>
+        <div class="chart" id="c-where"></div>
+        <p class="note" id="where-note"></p>
+        <div id="n-where"></div>
+      </section>
+      <section class="card glass reveal" aria-labelledby="t-citypay">
+        <div class="card-head"><h3 id="t-citypay">Which city pays more?</h3><span class="tag">median advertised salary</span></div>
+        <div class="chart" id="c-citypay"></div>
+        <p class="note">All analyst roles with a listed salary; cities with under 10 salaried jobs are hidden. n = salaried jobs, so small n means rough numbers.</p>
+        <div id="n-citypay"></div>
+      </section>
+    </div>
+
+    <section class="card glass reveal" aria-labelledby="t-cityskills">
+      <div class="card-head"><h3 id="t-cityskills">Which city asks for which skills?</h3><span class="tag">Data Analyst jobs, cities with 30+ jobs</span></div>
+      <div class="chart" style="height:400px" id="c-cityskills"></div>
+      <div id="n-cityskills"></div>
+    </section>
+
+    <div class="grid g2">
+      <section class="card glass reveal" aria-labelledby="t-top">
+        <div class="card-head"><h3 id="t-top">Top hiring companies</h3></div>
+        <div class="chart tall" id="c-top"></div>
+        <div id="n-top"></div>
+      </section>
+      <section class="card glass reveal" aria-labelledby="t-industry">
+        <div class="card-head"><h3 id="t-industry">Hiring by industry</h3><span class="tag">labelled companies</span></div>
+        <div class="chart tall" id="c-industry"></div>
+        <p class="note">We labelled the top ~60 companies by hand; the rest are counted as unlabelled (see the numbers).</p>
+        <div id="n-industry"></div>
+      </section>
+    </div>
+
+    <section class="card glass reveal" aria-labelledby="t-cloud">
+      <div class="card-head"><h3 id="t-cloud">Which cloud does each industry want?</h3><span class="tag">share of Data Analyst jobs</span></div>
+      <div class="chart" id="c-cloud"></div>
+      <div id="n-cloud"></div>
+    </section>
+
+    <section class="card glass reveal" aria-labelledby="t-indprof">
+      <div class="card-head"><h3 id="t-indprof">Skill profile by industry</h3></div>
+      <div class="chart" style="height:400px" id="c-indprof"></div>
+      <p class="note">Our starting hypothesis (IT services want many tools; product companies want SQL + one viz tool + communication)
+        was not supported: IT services list an average number of skills, and the "product pattern" is equally common everywhere.</p>
+      <div id="n-indprof"></div>
+    </section>
+  </div>
+</main>
+</body>
+</html>

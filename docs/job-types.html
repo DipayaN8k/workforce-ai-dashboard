@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Job types | WorkForce AI</title>
+  <meta name="description" content="The 6 kinds of Data Analyst jobs in India, found by clustering, what each asks for, and how pay differs.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect x='1' y='10' width='10' height='15' rx='3' fill='%23365e1c'/%3E%3Crect x='14' y='1' width='11' height='11' rx='3' fill='%235b9234'/%3E%3Crect x='14' y='15' width='11' height='10' rx='3' fill='%23a9c98a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body data-page="types">
+<main id="main" class="wrap">
+  <header class="page-head">
+    <div><h1>6 kinds of Data Analyst jobs</h1><p>A clustering algorithm (k-means) sorted <strong id="type-count">–</strong> jobs into 6 groups by the
+      skills they ask for; we then named each group. Separation score <strong id="sep-score">–</strong>: jobs blend into each other,
+      so these are typical profiles, not rigid boxes.</p></div>
+    <div class="pills"><span class="pill"><span class="dot"></span><span data-window>–</span></span></div>
+  </header>
+
+  <div class="grid">
+    <div class="grid g2">
+      <section class="card glass reveal" aria-labelledby="t-types">
+        <div class="card-head"><h3 id="t-types">How common is each type?</h3></div>
+        <div class="chart" id="c-types"></div>
+        <div id="n-types"></div>
+      </section>
+      <section class="card glass reveal" aria-labelledby="t-toolspay">
+        <div class="card-head"><h3 id="t-toolspay">Tools listed vs pay</h3><span class="tag">same experience level &amp; city</span></div>
+        <div class="chart" id="c-toolspay"></div>
+        <p class="note">Pay compared with the BI/dashboard type. Few salaried jobs per type, so treat exact sizes as rough.</p>
+        <div id="n-toolspay"></div>
+      </section>
+    </div>
+    <section class="card glass reveal" aria-labelledby="t-typeprof">
+      <div class="card-head"><h3 id="t-typeprof">What each type asks for</h3><span class="tag">share of jobs in the type</span></div>
+      <div class="chart" style="height:400px" id="c-typeprof"></div>
+      <div id="n-typeprof"></div>
+    </section>
+  </div>
+</main>
+</body>
+</html>
