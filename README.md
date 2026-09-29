@@ -1,5 +1,7 @@
 # WorkForce AI: Data Analyst Job Market Dashboard (India)
 
+### 🌐 Live: **[workforce-ai-india.streamlit.app](https://workforce-ai-india.streamlit.app)**
+
 An interactive dashboard showing which skills Indian Data Analyst job postings ask for,
 which skills go with higher advertised pay, the 6 types of Data Analyst jobs, city and
 industry differences, AI and work-mode demand, and more.
