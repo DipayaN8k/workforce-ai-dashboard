@@ -1,0 +1,43 @@
+skill,experience_level,share,postings
+SQL,junior,0.5641,39
+Excel,junior,0.6154,39
+Python,junior,0.3333,39
+Power BI,junior,0.2564,39
+Tableau,junior,0.2051,39
+Statistics,junior,0.3077,39
+A/B testing,junior,0.0,39
+Machine learning,junior,0.0513,39
+ETL,junior,0.0513,39
+AWS,junior,0.0513,39
+Azure,junior,0.0769,39
+Stakeholder mgmt,junior,0.359,39
+Communication,junior,0.5128,39
+Generative AI,junior,0.0256,39
+SQL,mid,0.6739,46
+Excel,mid,0.3696,46
+Python,mid,0.3043,46
+Power BI,mid,0.1957,46
+Tableau,mid,0.1739,46
+Statistics,mid,0.1957,46
+A/B testing,mid,0.0217,46
+Machine learning,mid,0.0652,46
+ETL,mid,0.2826,46
+AWS,mid,0.1957,46
+Azure,mid,0.0652,46
+Stakeholder mgmt,mid,0.5435,46
+Communication,mid,0.5217,46
+Generative AI,mid,0.0435,46
+SQL,senior,0.6494,385
+Excel,senior,0.3455,385
+Python,senior,0.4649,385
+Power BI,senior,0.2753,385
+Tableau,senior,0.3481,385
+Statistics,senior,0.4,385
+A/B testing,senior,0.0312,385
+Machine learning,senior,0.0857,385
+ETL,senior,0.2156,385
+AWS,senior,0.187,385
+Azure,senior,0.2182,385
+Stakeholder mgmt,senior,0.626,385
+Communication,senior,0.6234,385
+Generative AI,senior,0.1247,385

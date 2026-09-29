@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-09-29T13:09:07+00:00",
+  "data_window": {
+    "first_run": "2026-09-27T13:20:33+00:00",
+    "last_run": "2026-09-29T13:02:14+00:00",
+    "runs": 4
+  },
+  "population": "Data Analyst-type postings in India with skills checked, excluding internships, posted within 1 year of last sighting",
+  "postings": 1083,
+  "salaried_postings_main_model": 82,
+  "job_type_separation_score": 0.203,
+  "skills": {
+    "sql": "SQL",
+    "excel": "Excel",
+    "python": "Python",
+    "power_bi": "Power BI",
+    "tableau": "Tableau",
+    "statistics": "Statistics",
+    "ab_testing": "A/B testing",
+    "machine_learning": "Machine learning",
+    "etl": "ETL",
+    "aws": "AWS",
+    "azure": "Azure",
+    "stakeholder": "Stakeholder mgmt",
+    "communication": "Communication",
+    "generative_ai": "Generative AI"
+  },
+  "attribution": "Job and salary data: The Adzuna API (https://www.adzuna.in)"
+}

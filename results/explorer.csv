@@ -1,0 +1,1084 @@
+city,experience_level,company_type,job_type,salary_lakh,remote_mentioned,hybrid_mentioned,SQL,Excel,Python,Power BI,Tableau,Statistics,A/B testing,Machine learning,ETL,AWS,Azure,Stakeholder mgmt,Communication,Generative AI
+Pune,mid,IT & analytics services,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0
+Pune,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Cloud data analyst,,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,0
+Chennai,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Staffing / recruiter,Few skills listed,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Unknown,unspecified,Unlabelled,Few skills listed,6.0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+Delhi NCR,unspecified,Unlabelled,BI / dashboard analyst,7.0,0,0,1,1,0,1,1,0,0,0,0,0,0,1,0,0
+Pune,senior,Unlabelled,Excel / reporting analyst,,0,1,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Bank & financial services,Python + SQL analyst,,0,0,1,1,1,0,0,1,0,1,0,0,0,0,1,0
+Pune,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Python + SQL analyst,8.0,0,0,1,1,1,1,0,0,0,0,0,0,1,1,1,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,20.0,0,0,1,0,1,1,1,0,0,0,0,0,0,1,1,0
+Unknown,mid,Staffing / recruiter,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,1,0,0,0,0,0,0,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Hyderabad,senior,Pharma & healthcare,Python + SQL analyst,,0,0,1,1,1,1,0,1,0,0,0,1,0,1,1,0
+Hyderabad,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,0,1,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,1,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0
+Pune,unspecified,IT & analytics services,Cloud data analyst,,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,0
+Unknown,senior,IT & analytics services,BI / dashboard analyst,,1,0,1,1,0,0,1,1,0,0,0,0,1,0,0,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,1,0,1,1,1,1,1,0,0,0,0,0,0,1,1,0
+Mumbai,unspecified,Unlabelled,Business-facing analyst,,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,IT & analytics services,Cloud data analyst,,0,0,0,1,1,0,0,1,0,0,0,1,1,1,1,1
+Unknown,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,1,0,0,0,1,1,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,16.0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0
+Unknown,senior,Bank & financial services,Python + SQL analyst,,0,1,1,0,1,0,0,1,0,0,0,0,0,1,1,1
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Other,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,IT & analytics services,Excel / reporting analyst,,1,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0
+Pune,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,0,0,1,0
+Unknown,unspecified,IT & analytics services,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hyderabad,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Other,senior,Unlabelled,Few skills listed,,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,0
+Hyderabad,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,1,0,0,1,1,0
+Unknown,unspecified,IT & analytics services,Excel / reporting analyst,,1,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,1,0,0,0,0,0,1,0,0
+Unknown,senior,Staffing / recruiter,Cloud data analyst,,0,0,1,0,1,0,0,0,0,0,0,1,1,1,1,1
+Unknown,unspecified,Bank & financial services,Python + SQL analyst,,0,1,0,0,1,0,0,1,0,0,0,0,0,1,1,0
+Unknown,junior,Unlabelled,Python + SQL analyst,6.0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,1,1,1,1,0,1,1,0,1,0,0,0,1,1,1
+Unknown,unspecified,Unlabelled,Cloud data analyst,,1,0,1,0,1,0,0,0,0,1,1,0,1,0,1,1
+Hyderabad,senior,Product / tech,Excel / reporting analyst,,0,0,1,1,0,0,1,0,0,0,0,0,0,1,0,0
+Bengaluru,unspecified,Unlabelled,Python + SQL analyst,9.5,0,0,1,0,1,0,0,1,1,0,0,0,0,1,1,0
+Unknown,junior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+Unknown,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,1,0,1,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,1,0,0,1,1,0,0,0,0,1,0,0,1,1,0
+Unknown,senior,IT & analytics services,Excel / reporting analyst,,1,1,0,1,0,0,0,1,0,0,0,0,1,1,0,0
+Unknown,senior,Bank & financial services,Python + SQL analyst,,0,1,1,1,1,1,0,1,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Other global company,Cloud data analyst,,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1,0
+Bengaluru,unspecified,Other global company,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mumbai,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Bengaluru,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Delhi NCR,unspecified,Unlabelled,Few skills listed,5.5,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+Bengaluru,mid,Staffing / recruiter,Excel / reporting analyst,11.0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,1,0,1,1,1,1,1,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pune,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,1,0,0,0,0,0,1,1,1
+Unknown,senior,Other global company,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Cloud data analyst,,0,0,1,1,1,1,0,1,0,0,0,1,1,0,0,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0
+Hyderabad,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Hyderabad,senior,Pharma & healthcare,Python + SQL analyst,,0,0,1,1,1,1,0,1,0,0,0,1,0,1,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Product / tech,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,mid,Unlabelled,Python + SQL analyst,9.5,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0
+Delhi NCR,unspecified,Staffing / recruiter,Cloud data analyst,,0,0,1,0,1,0,0,0,0,0,1,1,1,1,1,0
+Other,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Chennai,senior,Unlabelled,Cloud data analyst,,0,0,1,1,1,1,1,1,0,1,1,1,1,0,0,0
+Unknown,senior,Unlabelled,Business-facing analyst,,0,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,1,0,0,0,0,0,0,1,1,0
+Pune,mid,Staffing / recruiter,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,30.0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Bank & financial services,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,0,0,1,1,1
+Unknown,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Consulting,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,0,0,1,1
+Delhi NCR,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0
+Unknown,unspecified,IT & analytics services,Cloud data analyst,,0,1,1,0,0,0,0,0,0,0,0,1,1,0,1,0
+Hyderabad,senior,Unlabelled,Cloud data analyst,,0,0,1,0,0,1,1,0,0,0,0,1,1,0,1,0
+Bengaluru,senior,Other global company,Business-facing analyst,,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+Unknown,unspecified,Pharma & healthcare,Business-facing analyst,,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0
+Unknown,junior,Staffing / recruiter,Excel / reporting analyst,,1,0,0,1,0,1,0,0,0,0,0,0,0,1,1,0
+Pune,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,1,0,1,0,1,1,0,1,1,1,1
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+Unknown,mid,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Pune,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,0,1,0,0,1,1,1,0,0,1
+Bengaluru,senior,Unlabelled,Business-facing analyst,,0,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0
+Hyderabad,unspecified,Staffing / recruiter,Cloud data analyst,,0,0,1,0,1,1,1,1,0,1,1,0,1,0,1,0
+Hyderabad,unspecified,Product / tech,BI / dashboard analyst,,0,0,1,1,1,0,1,1,0,0,1,0,0,1,1,0
+Hyderabad,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0
+Unknown,unspecified,Other global company,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Other,unspecified,Unlabelled,BI / dashboard analyst,32.5,0,0,1,1,0,1,1,1,0,0,0,0,0,1,0,0
+Unknown,unspecified,Anonymous,Python + SQL analyst,4.5,0,0,1,0,1,1,0,1,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,senior,Pharma & healthcare,BI / dashboard analyst,,0,0,1,0,1,0,1,0,0,0,0,1,0,1,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,0,1,1,1,1,0,1,1,0,0,0,0,0,1,1,0
+Hyderabad,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,IT & analytics services,Python + SQL analyst,,0,1,1,1,1,1,0,0,0,0,1,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,1,1,0,0,0,0,1
+Unknown,unspecified,Product / tech,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,1,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Cloud data analyst,,1,1,1,0,1,1,0,1,0,1,1,1,1,0,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0
+Hyderabad,unspecified,Unlabelled,Excel / reporting analyst,,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,mid,IT & analytics services,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Consulting,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Cloud data analyst,,0,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0
+Hyderabad,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,junior,Staffing / recruiter,Cloud data analyst,,1,0,1,0,1,1,1,1,0,1,0,1,1,1,1,0
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,1,0,0,0,0,0,1,1,0
+Delhi NCR,unspecified,Staffing / recruiter,Few skills listed,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,mid,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,mid,Unlabelled,Python + SQL analyst,,0,0,1,1,1,1,0,1,0,0,0,0,0,0,1,0
+Mumbai,unspecified,Bank & financial services,Excel / reporting analyst,,0,0,1,1,0,0,1,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Staffing / recruiter,Excel / reporting analyst,8.0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Bank & financial services,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0
+Other,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Mumbai,unspecified,Unlabelled,BI / dashboard analyst,,0,0,0,1,0,1,1,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,senior,Pharma & healthcare,Cloud data analyst,,0,0,1,1,1,0,0,0,0,0,1,1,1,0,1,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Chennai,unspecified,Unlabelled,Excel / reporting analyst,,1,0,1,1,0,1,0,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Product / tech,Excel / reporting analyst,,0,0,0,1,0,0,1,1,0,0,0,0,0,1,1,1
+Other,unspecified,Unlabelled,Python + SQL analyst,32.5,0,0,1,0,1,1,0,1,0,0,0,0,0,0,1,0
+Chennai,unspecified,Unlabelled,Python + SQL analyst,,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,mid,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Hyderabad,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,1,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0
+Hyderabad,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,1,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,1,0,1,0,0,0,0,1,0
+Other,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,1,0,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Bank & financial services,Python + SQL analyst,,0,1,1,0,1,0,0,1,0,0,0,0,0,1,1,1
+Pune,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hyderabad,senior,Product / tech,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,1,0,1,1,0,1,1,1,1,0,1,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,6.0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,1,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pune,mid,IT & analytics services,Cloud data analyst,,0,0,1,0,1,0,1,0,0,0,1,1,1,1,0,0
+Bengaluru,mid,Unlabelled,Few skills listed,,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Chennai,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,1,0,1,0,0,0,1,1,0
+Unknown,junior,Unlabelled,BI / dashboard analyst,5.5,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0
+Hyderabad,unspecified,Unlabelled,Python + SQL analyst,,1,0,1,1,1,0,0,0,0,0,1,0,0,1,0,0
+Other,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Other,unspecified,Staffing / recruiter,BI / dashboard analyst,7.0,0,0,1,1,1,1,1,1,0,0,1,0,0,1,0,0
+Delhi NCR,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Pharma & healthcare,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,senior,Bank & financial services,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+Pune,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,1,1,0,0,0,0,1,1,1,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Consulting,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Delhi NCR,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,0,0,1,0
+Delhi NCR,mid,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,1,0,0,1,1,1
+Chennai,unspecified,Unlabelled,Business-facing analyst,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Hyderabad,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,1,1,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,1,0,0,1,1,0
+Unknown,senior,Unlabelled,Cloud data analyst,,0,1,1,0,1,0,1,0,0,0,1,1,1,1,1,0
+Chennai,senior,Bank & financial services,BI / dashboard analyst,,0,0,1,1,1,0,1,0,0,0,0,0,0,0,1,0
+Mumbai,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0
+Bengaluru,senior,Unlabelled,Cloud data analyst,,0,0,1,1,1,1,0,1,0,0,0,1,1,0,0,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,4.0,1,0,1,0,1,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Product / tech,BI / dashboard analyst,,0,0,1,0,0,1,1,1,0,1,0,0,0,1,1,0
+Hyderabad,unspecified,Pharma & healthcare,Python + SQL analyst,,0,0,1,1,1,0,0,1,0,0,0,1,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,1,0,1,1,0
+Chennai,unspecified,Bank & financial services,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Delhi NCR,unspecified,Unlabelled,Business-facing analyst,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Pune,mid,Staffing / recruiter,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,senior,Unlabelled,Python + SQL analyst,,0,1,1,0,1,0,0,1,0,0,1,0,0,0,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,senior,Staffing / recruiter,Cloud data analyst,,0,0,1,0,1,1,1,0,0,0,1,0,1,1,0,0
+Mumbai,unspecified,Unlabelled,Few skills listed,,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Pune,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,0,0,0,0,0,0,1,1,0
+Other,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Delhi NCR,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,1,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,1,0,0,0,1,0,0,1,1,0
+Hyderabad,senior,Pharma & healthcare,Cloud data analyst,,0,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0
+Unknown,senior,Consulting,Python + SQL analyst,,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Mumbai,unspecified,Unlabelled,Few skills listed,,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Other,unspecified,Unlabelled,Cloud data analyst,,0,0,1,0,1,1,1,1,0,1,0,1,1,1,0,1
+Bengaluru,unspecified,IT & analytics services,BI / dashboard analyst,,0,0,1,0,1,0,1,0,0,0,0,0,0,1,1,0
+Pune,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,0,1,0,0,1,1,1,0,0,1
+Pune,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,1,1,0,0,0,0,0,1,1,0
+Hyderabad,unspecified,Unlabelled,Business-facing analyst,,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,senior,Pharma & healthcare,Cloud data analyst,,0,0,1,1,1,0,0,0,0,0,1,1,0,0,1,0
+Other,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,IT & analytics services,Cloud data analyst,,1,1,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+Mumbai,unspecified,Unlabelled,Business-facing analyst,15.0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,1,0
+Unknown,unspecified,IT & analytics services,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,0,0,1,0,0
+Hyderabad,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Unknown,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,1,0,1,0,0,0,0,1,1,1,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,1,1,1,0,0,0,0,1,1,1,0
+Unknown,senior,Staffing / recruiter,Business-facing analyst,,1,0,1,0,0,0,1,0,0,0,0,0,0,1,1,0
+Mumbai,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,1,0,1,1,0,0,1,1,0
+Unknown,senior,IT & analytics services,Cloud data analyst,,1,1,1,0,1,0,1,1,0,0,1,1,1,1,1,0
+Unknown,junior,Unlabelled,Business-facing analyst,6.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Product / tech,BI / dashboard analyst,,0,0,1,1,1,0,1,1,0,0,1,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,1
+Unknown,unspecified,Other global company,Business-facing analyst,,0,0,1,0,0,0,0,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0
+Mumbai,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,0,1,1,1,0,1,0,0,0,1,1,0
+Mumbai,junior,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,1,0,0,0,0,0,0,0,1,0,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,1,1,1,1,1,1,0,1,0,0,0,0,1,1,0
+Mumbai,unspecified,Consulting,Python + SQL analyst,,0,0,1,1,1,1,0,0,0,1,1,0,0,0,1,0
+Unknown,senior,Pharma & healthcare,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hyderabad,unspecified,Product / tech,BI / dashboard analyst,,0,0,1,1,0,0,1,1,0,0,1,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Business-facing analyst,,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+Other,unspecified,Staffing / recruiter,BI / dashboard analyst,,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,1,1,0,0,1,0,1,1,1,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Delhi NCR,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+Delhi NCR,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,0,1,0,0,0,0,0,0,1,1,0
+Delhi NCR,senior,Unlabelled,Python + SQL analyst,,1,1,1,1,1,1,0,0,0,0,1,0,0,1,0,0
+Unknown,mid,Unlabelled,Excel / reporting analyst,4.0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0
+Delhi NCR,unspecified,Unlabelled,Few skills listed,,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+Delhi NCR,unspecified,Staffing / recruiter,Cloud data analyst,,0,0,1,0,1,1,1,1,0,0,1,1,1,1,0,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mumbai,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,1,0,0,1,0
+Delhi NCR,unspecified,Unlabelled,Business-facing analyst,,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Unknown,senior,IT & analytics services,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mumbai,senior,Unlabelled,Python + SQL analyst,,0,0,1,1,1,1,0,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,IT & analytics services,Business-facing analyst,,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+Mumbai,senior,Unlabelled,BI / dashboard analyst,,1,1,1,1,1,1,1,0,0,0,0,0,0,1,0,0
+Bengaluru,unspecified,Unlabelled,Cloud data analyst,,0,0,1,0,1,1,1,1,0,0,1,1,1,1,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Hyderabad,unspecified,Product / tech,Excel / reporting analyst,,0,0,0,1,0,0,1,1,0,0,0,0,0,1,1,1
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,1,0,0,0,0,0,0,1,1,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,1,1,1,0,0,0,0,0,0,0,1,0,0,1,1,0
+Pune,senior,Unlabelled,Python + SQL analyst,13.0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1
+Unknown,senior,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,1,1,1,0,1,0,0,0,0,1,0
+Hyderabad,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,1,0,0,1,0,0,1,1,0
+Pune,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,senior,Bank & financial services,Excel / reporting analyst,,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0
+Mumbai,junior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,IT & analytics services,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,1,0,1,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0
+Mumbai,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pune,senior,Product / tech,BI / dashboard analyst,,0,0,1,0,1,0,1,1,0,0,0,0,0,1,1,0
+Unknown,mid,Staffing / recruiter,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0
+Delhi NCR,mid,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,0,0,1,0
+Hyderabad,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,IT & analytics services,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+Hyderabad,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,1,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,1,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,5.5,0,0,1,0,1,1,1,0,0,0,1,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0
+Pune,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,1,0,0,0,0,0,1,1,0
+Bengaluru,mid,Staffing / recruiter,Business-facing analyst,,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0
+Pune,unspecified,Unlabelled,Excel / reporting analyst,,0,1,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Pharma & healthcare,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Delhi NCR,unspecified,Anonymous,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,unspecified,Other global company,BI / dashboard analyst,,0,0,1,0,1,0,1,1,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,1,0,0,0,0,0,0,0,1,1,0
+Mumbai,unspecified,Unlabelled,Cloud data analyst,,0,0,1,1,1,1,0,1,0,0,0,1,1,0,0,0
+Other,unspecified,IT & analytics services,BI / dashboard analyst,,0,0,1,0,1,1,1,1,1,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,5.5,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,0,0,1,1,0
+Hyderabad,unspecified,Pharma & healthcare,BI / dashboard analyst,,0,0,1,1,0,0,1,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,1,0,1,0,0,1,0,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,0
+Bengaluru,senior,Unlabelled,Cloud data analyst,,0,0,1,1,1,0,0,0,0,0,1,0,1,1,1,0
+Bengaluru,unspecified,Unlabelled,Cloud data analyst,,0,0,1,0,1,1,1,0,0,0,1,0,1,0,0,0
+Hyderabad,unspecified,Pharma & healthcare,BI / dashboard analyst,,0,0,1,1,0,0,1,1,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,1,1,1,0,1,0,0,0,1,1,0
+Delhi NCR,unspecified,Unlabelled,Business-facing analyst,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,senior,IT & analytics services,Business-facing analyst,,1,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0
+Delhi NCR,mid,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,1,0,0,0,0,0,1,1,0
+Pune,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,0,1,1,0,1,0,0,0,1,1,0
+Unknown,senior,IT & analytics services,Few skills listed,,1,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0
+Bengaluru,senior,Other global company,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Other global company,Business-facing analyst,,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,1,1,1,0,0,0,0,1,1,1,0
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Hyderabad,senior,Unlabelled,BI / dashboard analyst,,0,1,1,0,1,1,1,1,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0
+Delhi NCR,unspecified,Staffing / recruiter,Python + SQL analyst,,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,1,0,1,0,1,0,0,0,0,0,0,0,1,1,0
+Delhi NCR,unspecified,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,1,1,0,0,0,1,1,1,1,0
+Chennai,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,1,0,1,1,0,0,0,0,0,0,1,0,0,1,1,0
+Unknown,senior,Bank & financial services,Python + SQL analyst,,0,0,1,1,1,1,0,1,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Pune,senior,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,1,0,0,0,0,0,1,1,0
+Pune,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Other global company,BI / dashboard analyst,,0,1,1,0,1,0,1,1,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+Chennai,junior,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1,0
+Chennai,senior,Unlabelled,Python + SQL analyst,44.0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,1,1
+Hyderabad,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0
+Hyderabad,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,0,1,1,0,0,0,0,0,0,1,1,0
+Other,unspecified,Unlabelled,Excel / reporting analyst,7.0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,unspecified,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,0,0,0,0,1,1,0,0,1,0
+Unknown,senior,IT & analytics services,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Other,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,1,0,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,1,1,0,0,0,1,0,0,1,1,0
+Delhi NCR,junior,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+Delhi NCR,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,0,1,0,0,1
+Bengaluru,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,0,0,0,0,1,0,1,1,0
+Unknown,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,1,0,1,1,1,0,0,0,0,0,0,1,0,1,1,0
+Unknown,unspecified,IT & analytics services,Cloud data analyst,,0,0,1,0,1,0,1,1,0,0,0,1,1,0,1,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,1,0,1,1,1,1,1,1,1,0,0,0,0,1,1,0
+Hyderabad,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,10.0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0
+Other,senior,Unlabelled,Python + SQL analyst,,0,0,1,1,1,1,0,0,0,0,0,0,0,1,1,1
+Unknown,unspecified,Unlabelled,Cloud data analyst,,0,0,1,1,1,0,0,1,0,0,0,1,1,1,1,1
+Pune,senior,Unlabelled,Cloud data analyst,,0,0,1,0,0,1,1,0,0,0,0,1,1,0,1,0
+Other,junior,Unlabelled,Few skills listed,3.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,1,0,0,0,0,0,0,0,1,1,0
+Other,unspecified,Unlabelled,BI / dashboard analyst,,0,0,0,1,1,1,1,1,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,1,0,0,1,0
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,,0,1,1,1,1,0,1,0,0,0,0,0,0,1,1,0
+Chennai,unspecified,IT & analytics services,Cloud data analyst,,0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0
+Unknown,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,1,1,1,1,1,1,1,0,0,0,0,0,1,1,0
+Mumbai,junior,Staffing / recruiter,Excel / reporting analyst,10.0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0
+Mumbai,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Product / tech,Business-facing analyst,,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0
+Hyderabad,unspecified,Product / tech,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Hyderabad,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0
+Unknown,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,0,1,1,0
+Mumbai,senior,Unlabelled,BI / dashboard analyst,,0,0,0,1,0,1,1,1,0,0,0,0,0,1,1,0
+Unknown,junior,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0
+Delhi NCR,unspecified,IT & analytics services,Business-facing analyst,,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,mid,Unlabelled,Business-facing analyst,,1,0,1,0,0,0,1,0,0,0,0,0,0,1,1,0
+Unknown,senior,IT & analytics services,Few skills listed,12.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pune,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,1,0,0,1,1,0
+Other,unspecified,Unlabelled,BI / dashboard analyst,31.0,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,1,0,0,0,0,0,0,1,1,0
+Other,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0
+Mumbai,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,0,0,0,0,1,0,1,1,1,0
+Hyderabad,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,0,0,0,0,0,0,1,1,1
+Unknown,unspecified,Unlabelled,Cloud data analyst,,0,0,1,0,0,1,1,1,0,0,0,1,1,0,1,0
+Bengaluru,junior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,1,0,1,0,1,1,1,1,0,0,0,0,0,1,1,0
+Delhi NCR,unspecified,Unlabelled,Excel / reporting analyst,,1,1,1,1,0,1,0,1,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0
+Unknown,mid,IT & analytics services,Cloud data analyst,,0,0,1,0,1,0,0,1,0,1,0,1,1,1,0,1
+Unknown,senior,IT & analytics services,Excel / reporting analyst,,1,1,0,1,0,0,1,1,0,0,0,0,1,0,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,1,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,IT & analytics services,Cloud data analyst,,1,1,0,1,1,0,1,1,0,0,0,1,1,1,1,0
+Delhi NCR,mid,Consulting,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0
+Unknown,senior,IT & analytics services,BI / dashboard analyst,,1,1,1,1,0,0,1,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+Bengaluru,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,1,0,0,0,0,0,1,1,1
+Mumbai,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+Mumbai,senior,Unlabelled,Cloud data analyst,,0,0,1,1,1,1,0,1,0,0,0,1,1,0,0,0
+Unknown,senior,Unlabelled,Python + SQL analyst,,1,0,1,0,1,0,0,1,1,1,0,1,0,1,1,1
+Pune,junior,Staffing / recruiter,BI / dashboard analyst,,0,0,1,1,1,0,1,1,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Cloud data analyst,,0,0,1,1,1,1,1,1,0,0,1,1,1,0,1,0
+Bengaluru,unspecified,Unlabelled,Python + SQL analyst,4.0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,15.0,0,0,1,0,1,0,0,1,0,0,0,0,1,1,1,0
+Hyderabad,unspecified,Unlabelled,BI / dashboard analyst,,0,0,0,1,0,1,1,1,0,0,0,0,0,0,1,0
+Pune,unspecified,Bank & financial services,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0
+Hyderabad,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,0
+Bengaluru,senior,Unlabelled,Excel / reporting analyst,,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+Other,unspecified,Staffing / recruiter,BI / dashboard analyst,,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0
+Bengaluru,senior,Staffing / recruiter,Python + SQL analyst,,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0
+Hyderabad,senior,Pharma & healthcare,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,0,0,0,0,1,0,1,1,0
+Other,junior,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1,0
+Hyderabad,unspecified,Staffing / recruiter,Cloud data analyst,,0,0,1,0,1,0,1,1,0,0,1,0,1,1,1,0
+Hyderabad,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Other,unspecified,Unlabelled,Few skills listed,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hyderabad,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Hyderabad,unspecified,Unlabelled,Few skills listed,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mumbai,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0
+Hyderabad,senior,Pharma & healthcare,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0
+Chennai,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,0,1,1,0
+Other,junior,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,1,0,0,0,0,0,0,1,0
+Delhi NCR,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,0,0,1,1,0,0,1,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,1,0,0,0,1,1,0
+Bengaluru,junior,Unlabelled,Cloud data analyst,,0,0,1,0,0,0,0,0,0,0,1,1,1,1,1,0
+Chennai,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,1,1,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Other,junior,Staffing / recruiter,BI / dashboard analyst,,0,0,1,1,1,0,1,1,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,1,0,1,0,1,0,0,1,1,1,0
+Mumbai,junior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Chennai,unspecified,Other global company,Python + SQL analyst,,0,0,1,0,1,1,0,1,0,1,1,0,0,1,1,1
+Bengaluru,senior,Unlabelled,Excel / reporting analyst,23.0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,1,0,0,0,0,0,0,0,0
+Mumbai,unspecified,Bank & financial services,Cloud data analyst,,0,1,1,0,1,0,0,0,0,0,1,1,0,1,1,0
+Chennai,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Mumbai,senior,Unlabelled,Few skills listed,8.5,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,1,0,1,0,0,0,0,1,1,0,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Unknown,unspecified,IT & analytics services,BI / dashboard analyst,,1,0,1,1,0,0,1,1,0,0,0,0,1,0,0,0
+Pune,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,0,0,0,0,0,0,1,1,0
+Chennai,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,0,1,0,0,0,0,1,1,0
+Hyderabad,unspecified,Product / tech,BI / dashboard analyst,,0,0,1,1,1,0,1,1,0,0,1,0,0,1,1,0
+Unknown,unspecified,Other global company,Business-facing analyst,,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,IT & analytics services,Python + SQL analyst,,0,1,1,1,1,1,0,0,0,0,1,0,0,1,1,0
+Unknown,senior,Unlabelled,Python + SQL analyst,,0,1,1,1,1,0,0,1,0,0,0,0,0,1,1,0
+Chennai,senior,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Hyderabad,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Chennai,senior,Bank & financial services,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Delhi NCR,junior,Unlabelled,Excel / reporting analyst,4.0,0,0,1,1,0,0,0,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,0,0,0,0,0,0,1,1,1
+Bengaluru,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,1,1,0,0,0,0,1,1,1
+Bengaluru,unspecified,Other global company,Business-facing analyst,,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,0
+Unknown,senior,Unlabelled,Cloud data analyst,,1,0,1,0,1,0,1,1,0,0,1,1,1,1,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,1,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Staffing / recruiter,Cloud data analyst,,0,0,1,0,1,1,1,1,0,1,1,0,1,0,1,0
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Hyderabad,senior,Unlabelled,Few skills listed,,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+Unknown,mid,IT & analytics services,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Staffing / recruiter,Cloud data analyst,,0,0,1,0,1,1,1,1,0,1,1,0,1,0,1,0
+Unknown,mid,Unlabelled,Python + SQL analyst,,0,0,1,1,1,1,0,1,0,0,0,0,0,0,1,0
+Unknown,unspecified,Other global company,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,1,0,0,0,1,1,1
+Bengaluru,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,1,0,1,1,0
+Mumbai,unspecified,Unlabelled,Few skills listed,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Bank & financial services,BI / dashboard analyst,,0,0,1,0,1,1,1,0,0,1,0,0,0,0,1,0
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,1,0,1,1,0,1,0,0,0,0,0,0,0,1,0,0
+Mumbai,unspecified,Bank & financial services,Cloud data analyst,,0,0,1,0,1,0,0,0,0,0,1,1,0,1,1,0
+Unknown,unspecified,Unlabelled,Cloud data analyst,14.0,0,0,1,0,1,0,0,0,0,0,1,1,1,0,1,0
+Unknown,senior,IT & analytics services,Excel / reporting analyst,,1,1,0,1,0,0,0,1,0,0,0,1,1,1,0,0
+Chennai,unspecified,Unlabelled,Business-facing analyst,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Pune,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Consulting,Python + SQL analyst,,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,0
+Delhi NCR,mid,Unlabelled,BI / dashboard analyst,6.0,0,0,1,1,1,0,1,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,1,1,1,0,1,1,0,1,0,0,0,0,0,0,1,0
+Delhi NCR,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+Mumbai,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,IT & analytics services,Cloud data analyst,,0,0,1,0,1,0,0,1,0,0,0,1,1,0,1,1
+Other,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,1,1,0,0,0,0,1,0,1
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,1,1,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0
+Other,unspecified,Unlabelled,Few skills listed,5.5,0,0,1,1,0,0,0,1,0,0,1,0,0,0,0,0
+Unknown,unspecified,IT & analytics services,Business-facing analyst,,0,0,1,0,0,1,0,0,0,0,0,0,0,1,1,0
+Mumbai,unspecified,Unlabelled,BI / dashboard analyst,4.0,0,0,1,1,0,1,1,1,0,0,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,1,0,1,1,1,0,0,1,1,0,0,0,0,0,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,junior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,1,0,1,0,0,0,0,1,0
+Pune,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,1,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Chennai,mid,Unlabelled,Cloud data analyst,,0,0,1,0,1,1,1,1,1,1,1,0,1,1,0,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,1,0,0,0,1,0,0,0,0,1,0
+Mumbai,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,1,1,1,0,1,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,1,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,,1,1,1,0,0,0,0,0,0,0,1,0,0,1,1,0
+Unknown,mid,IT & analytics services,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Delhi NCR,unspecified,Staffing / recruiter,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,unspecified,Product / tech,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mumbai,unspecified,Consulting,Python + SQL analyst,,0,0,1,1,1,1,0,0,0,1,1,0,0,0,1,0
+Unknown,senior,Consulting,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,1,0,1,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mumbai,unspecified,Unlabelled,Few skills listed,,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Staffing / recruiter,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Bank & financial services,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,IT & analytics services,Business-facing analyst,,1,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0
+Unknown,unspecified,IT & analytics services,Cloud data analyst,,0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0
+Hyderabad,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,1,0,0,0,0,0,1,1,1
+Hyderabad,unspecified,Unlabelled,Excel / reporting analyst,,0,1,1,1,0,1,0,0,0,0,0,0,0,1,1,0
+Hyderabad,senior,Pharma & healthcare,Few skills listed,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+Unknown,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,1,0,1,1,1
+Unknown,unspecified,Consulting,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,0,1,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Bank & financial services,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Bank & financial services,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+Hyderabad,senior,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,0,1,0,0,0,0,0,0,1,0,0
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,,1,0,1,1,1,0,1,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,senior,Unlabelled,Cloud data analyst,,0,0,1,1,0,1,0,0,0,0,1,0,1,1,1,0
+Bengaluru,senior,Pharma & healthcare,Cloud data analyst,,0,0,1,1,1,0,0,0,0,0,1,1,0,0,1,0
+Other,unspecified,Staffing / recruiter,Excel / reporting analyst,6.0,0,1,0,1,0,1,1,0,0,0,0,0,0,0,1,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+Hyderabad,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,1,0,1,0,1,0,0,0,1,1,0
+Unknown,senior,IT & analytics services,Business-facing analyst,,1,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0
+Mumbai,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Delhi NCR,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,IT & analytics services,Cloud data analyst,,0,0,1,0,1,0,0,1,0,0,0,1,1,0,1,1
+Delhi NCR,unspecified,Unlabelled,Excel / reporting analyst,42.0,0,0,1,1,0,0,0,1,0,0,0,0,0,1,0,0
+Hyderabad,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,1,0,0,0,1,0
+Unknown,senior,IT & analytics services,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Chennai,senior,Unlabelled,BI / dashboard analyst,,0,0,1,1,0,1,1,1,0,0,0,0,0,1,0,0
+Bengaluru,unspecified,Bank & financial services,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Pharma & healthcare,Cloud data analyst,,0,0,1,1,1,0,0,0,0,0,1,1,0,0,1,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,1,1,1,0,1,1,0,0,0,0,0,0,1,1,0
+Hyderabad,mid,Unlabelled,Excel / reporting analyst,17.0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,1,0
+Pune,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,0,1,0,0,0,0,0,0,1,1,0
+Delhi NCR,unspecified,Unlabelled,Excel / reporting analyst,4.5,0,0,1,1,0,1,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,IT & analytics services,Few skills listed,,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,senior,Consulting,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0
+Chennai,senior,Unlabelled,Cloud data analyst,,0,1,1,0,1,1,0,1,0,0,1,1,1,1,1,0
+Mumbai,mid,Staffing / recruiter,Excel / reporting analyst,10.0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,1,0
+Bengaluru,senior,Bank & financial services,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,1,0,0,0,1,1,1,1,1,1
+Unknown,senior,IT & analytics services,Few skills listed,,1,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0
+Mumbai,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,senior,Bank & financial services,Python + SQL analyst,,0,0,1,1,1,0,0,1,0,1,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pune,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Bank & financial services,Excel / reporting analyst,,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0
+Bengaluru,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Delhi NCR,senior,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,1,0,0,1,0,0,0,1,0
+Mumbai,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Unknown,senior,Staffing / recruiter,Cloud data analyst,,0,0,1,0,1,1,1,0,0,0,1,0,1,1,0,0
+Other,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Pharma & healthcare,Few skills listed,,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,unspecified,IT & analytics services,Few skills listed,,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hyderabad,senior,Staffing / recruiter,Business-facing analyst,,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,1,1,0,0,0,0,1,1,0
+Unknown,unspecified,IT & analytics services,Excel / reporting analyst,,1,1,0,1,0,0,1,1,0,0,0,0,1,1,1,0
+Unknown,unspecified,Bank & financial services,Excel / reporting analyst,,0,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Mumbai,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,10.0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0
+Other,unspecified,Unlabelled,Excel / reporting analyst,24.0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,1,0
+Pune,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0
+Hyderabad,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,junior,Unlabelled,Excel / reporting analyst,,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+Other,unspecified,Staffing / recruiter,Python + SQL analyst,,0,1,1,0,1,0,0,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0
+Hyderabad,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0
+Mumbai,senior,IT & analytics services,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0
+Hyderabad,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1,0
+Unknown,senior,IT & analytics services,Business-facing analyst,,1,1,0,0,0,0,1,1,0,0,0,0,0,1,1,0
+Delhi NCR,senior,Unlabelled,Cloud data analyst,,0,0,1,0,0,1,1,0,0,0,0,1,1,0,1,0
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,0,1,1,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Pharma & healthcare,Cloud data analyst,,0,0,1,0,1,0,0,0,0,0,1,1,1,0,0,0
+Other,junior,Unlabelled,Excel / reporting analyst,4.5,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Unknown,senior,IT & analytics services,Cloud data analyst,,1,0,1,0,0,0,1,1,0,0,1,1,1,1,0,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Pune,mid,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,1,0,1,0,0,0,0,0,1,0,0
+Mumbai,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0
+Delhi NCR,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,0
+Other,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,1,0,0,1,1,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,1
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,1,1,1,1,1,1,1,0,1,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,2.5,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,1,0,0,0,1,1,1
+Bengaluru,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+Unknown,mid,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,1,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0
+Unknown,senior,Product / tech,Excel / reporting analyst,,0,0,1,1,0,0,1,0,0,0,0,0,0,1,0,0
+Unknown,unspecified,Staffing / recruiter,Business-facing analyst,,1,0,0,0,0,0,1,0,0,0,1,0,0,1,1,0
+Other,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,5.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,senior,Unlabelled,Cloud data analyst,,0,0,1,1,1,1,1,1,0,0,0,1,1,1,1,0
+Unknown,senior,IT & analytics services,BI / dashboard analyst,,1,1,1,1,0,0,1,1,0,0,0,0,1,1,0,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,3.5,0,0,1,0,1,1,1,0,0,0,0,0,0,1,0,0
+Chennai,senior,Unlabelled,Python + SQL analyst,34.0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,1
+Bengaluru,senior,IT & analytics services,BI / dashboard analyst,,0,0,1,0,0,1,1,0,0,0,0,0,0,1,0,0
+Delhi NCR,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Cloud data analyst,,0,0,1,1,1,1,0,1,0,0,1,1,0,1,1,0
+Unknown,senior,IT & analytics services,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,5.5,0,0,1,1,1,1,1,1,0,1,1,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,1,0,0,0,0,0,0,1,1
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,1,0,0,0,1,1,1,1,1,1
+Unknown,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0
+Unknown,senior,Unlabelled,Cloud data analyst,16.0,0,0,1,1,1,1,0,0,0,0,1,1,1,0,0,0
+Hyderabad,senior,Pharma & healthcare,Few skills listed,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,1,1,0,1,1,1,1,0,0,1,0,0,1,1,1
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hyderabad,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Hyderabad,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,1,0,1,0,0,1,1,1,1,0,0,0,0,1,0,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0
+Chennai,unspecified,Bank & financial services,Business-facing analyst,,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0
+Delhi NCR,unspecified,Unlabelled,Business-facing analyst,,1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0
+Pune,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0
+Unknown,unspecified,Staffing / recruiter,Cloud data analyst,,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,0
+Mumbai,unspecified,Bank & financial services,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,1,0,0,0,1,1,0
+Hyderabad,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,1,1,1,1,0,0,1,1,1,0,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,1
+Unknown,senior,IT & analytics services,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Hyderabad,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Python + SQL analyst,,1,1,1,0,1,0,0,1,0,1,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,junior,IT & analytics services,Python + SQL analyst,,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,Cloud data analyst,,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0
+Delhi NCR,unspecified,IT & analytics services,Few skills listed,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+Delhi NCR,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,0,0,1,0
+Other,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,1,0,0,0,0,1,0
+Pune,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,0,1,0,0,1,1,1,0,0,1
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+Pune,unspecified,Bank & financial services,BI / dashboard analyst,,0,0,1,0,0,0,1,1,0,0,0,0,0,1,1,0
+Delhi NCR,unspecified,Unlabelled,Cloud data analyst,,0,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0
+Unknown,unspecified,Bank & financial services,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+Hyderabad,unspecified,Unlabelled,Python + SQL analyst,,1,0,1,0,1,1,0,1,1,0,0,0,0,0,1,0
+Delhi NCR,senior,Unlabelled,Business-facing analyst,20.0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,30.0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,1,0
+Hyderabad,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Bank & financial services,BI / dashboard analyst,,0,0,1,1,1,0,1,0,0,0,0,0,1,1,1,1
+Unknown,unspecified,Pharma & healthcare,Cloud data analyst,,0,1,1,0,1,0,0,0,0,0,1,1,1,1,1,1
+Hyderabad,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Other,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,junior,IT & analytics services,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+Delhi NCR,unspecified,Consulting,Excel / reporting analyst,,0,0,0,1,0,1,0,0,0,0,0,0,1,1,1,0
+Hyderabad,unspecified,Pharma & healthcare,Python + SQL analyst,,0,0,1,1,1,0,0,1,0,0,0,1,0,1,1,0
+Pune,junior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Chennai,senior,IT & analytics services,BI / dashboard analyst,,0,0,1,0,0,1,1,1,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0
+Other,junior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,1,0,1,1,1,1,1,1,0,1,0,1,0,0,1,1
+Bengaluru,senior,Staffing / recruiter,Cloud data analyst,,0,0,1,0,1,1,1,0,0,0,1,0,1,1,0,0
+Unknown,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,senior,IT & analytics services,Few skills listed,,1,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0
+Bengaluru,unspecified,Staffing / recruiter,Cloud data analyst,,0,0,1,0,1,0,1,1,0,0,1,0,1,1,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,1,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0
+Unknown,senior,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,1,1,0,0,0,1,0,0,1,1,0
+Pune,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,1
+Unknown,senior,Product / tech,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0
+Unknown,senior,IT & analytics services,Few skills listed,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Unknown,junior,Unlabelled,Python + SQL analyst,7.5,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,1
+Unknown,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,0,0,0,1,1,1,1,0,0,0,0,0,0,1,1,0
+Pune,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0
+Bengaluru,unspecified,Other global company,Cloud data analyst,,0,0,1,1,1,0,0,1,0,0,0,1,1,1,1,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,0,0,1,1,1
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,1,1,0,1,0,1,0,0,0,1,0,0,1,0,0
+Delhi NCR,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,1,0,0,1,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,1,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,1,0,1,1,1,1,1,1,0,0,0,1,0,0,1,1
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mumbai,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,1,0,0,0,0,0,1,1,0
+Delhi NCR,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,1,0,0,0,1,1,0
+Unknown,senior,IT & analytics services,BI / dashboard analyst,,1,0,1,0,1,0,1,1,0,0,1,0,0,0,0,0
+Delhi NCR,unspecified,IT & analytics services,Business-facing analyst,,0,0,1,0,0,1,0,0,0,0,1,0,0,1,1,0
+Chennai,unspecified,Unlabelled,Python + SQL analyst,,0,1,1,0,1,1,0,0,0,0,1,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+Mumbai,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,0
+Delhi NCR,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,1,0,1,0,0,0,0,0,1,0,0
+Hyderabad,unspecified,Unlabelled,Cloud data analyst,,0,0,1,1,1,1,1,0,0,0,1,1,0,1,0,0
+Mumbai,unspecified,Unlabelled,Cloud data analyst,,0,0,1,1,1,1,0,0,0,0,1,0,1,1,1,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,1,0,0,0,0,0,0,1,1
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,1,1,1,0,1,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Bengaluru,senior,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,1,0,0,1,0,0,0,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,1,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,1,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0
+Unknown,senior,IT & analytics services,Few skills listed,,1,1,0,0,1,0,1,1,0,0,1,0,0,0,0,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,1,0,0,0,1,1,1
+Delhi NCR,unspecified,IT & analytics services,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0
+Unknown,senior,IT & analytics services,Cloud data analyst,,1,0,1,1,0,0,0,1,0,0,1,0,1,1,0,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,0
+Hyderabad,senior,Unlabelled,Python + SQL analyst,,0,0,1,1,1,1,0,0,0,0,0,0,0,1,1,1
+Unknown,senior,IT & analytics services,BI / dashboard analyst,,0,0,1,1,1,0,1,0,0,0,0,0,0,0,1,0
+Bengaluru,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,senior,Unlabelled,Python + SQL analyst,,0,0,1,1,1,1,0,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0
+Other,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,0,1,1,1,0,1,1,0,1,1,1,0
+Hyderabad,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,senior,IT & analytics services,Few skills listed,,1,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0
+Hyderabad,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0
+Mumbai,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,1,0,1,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Product / tech,Few skills listed,,0,0,1,1,0,0,1,0,0,0,1,0,0,0,0,0
+Pune,unspecified,Unlabelled,Few skills listed,3.5,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+Other,unspecified,Staffing / recruiter,Python + SQL analyst,9.0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hyderabad,unspecified,Product / tech,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+Delhi NCR,unspecified,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,0,0,0,0,1,1,1,1,1,0
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,,1,0,1,0,1,1,1,0,0,0,1,0,0,0,1,0
+Pune,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,1,0,0,0,0,0,0,0,1,1,0
+Mumbai,senior,Unlabelled,Cloud data analyst,,0,0,1,1,1,1,1,1,0,0,1,1,1,0,1,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,1,0,1,1,0
+Unknown,unspecified,IT & analytics services,Python + SQL analyst,,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,0
+Pune,unspecified,Bank & financial services,BI / dashboard analyst,,0,0,1,0,0,0,1,1,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,0,0,0,0,0,1,1,1,0,0
+Other,senior,Unlabelled,Excel / reporting analyst,26.5,0,0,1,1,0,0,0,1,0,0,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0
+Bengaluru,mid,Staffing / recruiter,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,0,0,0,0,0,0,1,1,1
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,,0,1,1,1,1,0,1,0,0,0,0,0,0,0,1,0
+Chennai,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0
+Hyderabad,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,1,0,0,0,0,1,1,0
+Bengaluru,unspecified,Pharma & healthcare,Cloud data analyst,,0,0,1,0,1,0,0,0,0,0,1,1,1,1,1,1
+Mumbai,senior,Unlabelled,Python + SQL analyst,,1,0,1,0,1,0,0,1,0,0,0,0,0,1,0,1
+Bengaluru,senior,Unlabelled,Business-facing analyst,,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1
+Unknown,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,1,0,1,0,0,0,1,1,0
+Bengaluru,unspecified,Bank & financial services,BI / dashboard analyst,,0,0,1,0,1,1,1,0,0,1,0,0,0,0,1,0
+Hyderabad,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,1,0,1,0,1,1,0,1,0,1,1
+Hyderabad,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,1,0,0,0,0,0,0,1,1
+Unknown,senior,IT & analytics services,Cloud data analyst,,1,1,1,0,0,0,1,1,0,0,1,1,1,1,0,0
+Bengaluru,unspecified,Other global company,BI / dashboard analyst,,0,0,1,0,1,0,1,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0
+Mumbai,senior,Consulting,BI / dashboard analyst,,0,0,1,0,1,1,1,0,0,0,0,0,0,1,0,0
+Hyderabad,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Hyderabad,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hyderabad,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Delhi NCR,mid,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,15.0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Delhi NCR,unspecified,Staffing / recruiter,BI / dashboard analyst,,0,0,1,1,0,0,1,1,0,0,0,0,0,1,1,0
+Other,unspecified,Staffing / recruiter,BI / dashboard analyst,,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,IT & analytics services,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pune,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Hyderabad,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,0,0,0,0,0,1,1,0,1,0
+Hyderabad,senior,Unlabelled,Excel / reporting analyst,,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Mumbai,senior,Unlabelled,Python + SQL analyst,,1,1,0,0,1,0,0,1,0,0,0,1,0,1,1,0
+Unknown,senior,IT & analytics services,Cloud data analyst,,1,1,1,0,0,0,0,1,0,0,1,0,1,1,1,0
+Mumbai,unspecified,Unlabelled,Excel / reporting analyst,,0,1,0,1,0,1,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Cloud data analyst,,1,1,1,1,1,0,1,0,0,0,1,0,1,1,1,0
+Hyderabad,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Other global company,Python + SQL analyst,,0,1,1,0,1,0,0,1,0,0,0,0,1,1,1,0
+Unknown,unspecified,Bank & financial services,BI / dashboard analyst,,0,1,1,1,1,0,1,0,0,0,0,0,1,1,1,1
+Unknown,unspecified,IT & analytics services,BI / dashboard analyst,,1,0,1,1,0,0,1,1,0,0,0,0,1,0,0,0
+Unknown,unspecified,Bank & financial services,Few skills listed,,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,junior,Unlabelled,Cloud data analyst,,0,0,1,1,0,1,0,1,0,0,1,0,1,0,1,0
+Bengaluru,unspecified,IT & analytics services,Python + SQL analyst,,0,1,1,1,1,1,0,0,0,0,1,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,0
+Delhi NCR,unspecified,Unlabelled,Few skills listed,4.5,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,unspecified,Staffing / recruiter,BI / dashboard analyst,,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0
+Mumbai,unspecified,Consulting,Excel / reporting analyst,,0,0,1,1,0,1,0,1,0,0,0,0,0,1,1,0
+Mumbai,unspecified,Unlabelled,Cloud data analyst,,0,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0
+Chennai,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,1,0,1,0,1,1,1,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Cloud data analyst,10.5,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0
+Mumbai,unspecified,Staffing / recruiter,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Pune,senior,Unlabelled,Few skills listed,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Bank & financial services,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,1,0,0,1,1,0
+Delhi NCR,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,1,0,1,0,0,0,0,1,0
+Bengaluru,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0
+Bengaluru,senior,IT & analytics services,Cloud data analyst,,1,1,1,0,1,0,0,0,0,0,1,0,1,1,1,0
+Unknown,senior,IT & analytics services,Cloud data analyst,,1,1,1,0,1,0,1,1,0,0,1,1,1,1,1,0
+Pune,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,0,1,1,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,mid,Anonymous,Business-facing analyst,,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0
+Bengaluru,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,1,1,0,0,0,1,1,1,1,0,0
+Bengaluru,unspecified,IT & analytics services,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,IT & analytics services,Excel / reporting analyst,,1,1,0,1,0,0,1,1,0,0,0,0,1,1,1,0
+Unknown,senior,IT & analytics services,Excel / reporting analyst,,1,0,1,1,0,1,0,1,0,0,0,0,0,0,1,0
+Hyderabad,unspecified,Unlabelled,Python + SQL analyst,,0,0,0,1,1,1,0,1,0,1,0,1,0,0,1,0
+Unknown,mid,Unlabelled,Business-facing analyst,18.0,0,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Delhi NCR,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,1,0,1,0,0,0,0,0,0,0,1,0
+Other,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Bank & financial services,Python + SQL analyst,,0,1,1,0,1,0,0,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,6.0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0
+Hyderabad,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,1,0,0,0,1,1,1,0,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+Chennai,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,0,0,1,0,0,0,1,1,1
+Mumbai,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,0,1,1,1,0,1,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Python + SQL analyst,,1,1,1,0,1,0,0,0,0,0,0,0,1,1,0,0
+Unknown,senior,Bank & financial services,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+Mumbai,mid,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,1,0,0,1,1,0
+Pune,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0
+Pune,unspecified,Unlabelled,Few skills listed,2.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,senior,IT & analytics services,Cloud data analyst,,1,1,1,0,0,0,1,1,0,0,1,1,1,1,0,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,1,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,1,0,1,1,0
+Bengaluru,unspecified,Product / tech,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Other global company,BI / dashboard analyst,,0,1,1,0,1,0,1,1,0,0,0,0,0,1,1,0
+Hyderabad,senior,Pharma & healthcare,Python + SQL analyst,,0,0,1,1,1,1,0,1,0,0,0,1,0,1,1,0
+Hyderabad,senior,Pharma & healthcare,Python + SQL analyst,,0,0,1,1,1,1,0,1,0,0,0,1,0,1,1,0
+Bengaluru,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,mid,Staffing / recruiter,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Hyderabad,unspecified,Pharma & healthcare,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0
+Hyderabad,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,0,1,0,0,0,1,1,1,1,1
+Delhi NCR,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Other global company,Python + SQL analyst,,0,1,1,0,1,0,0,1,0,0,0,0,1,1,1,0
+Bengaluru,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hyderabad,senior,Product / tech,Excel / reporting analyst,,0,0,1,1,0,0,0,1,1,0,0,0,0,1,1,0
+Mumbai,unspecified,Unlabelled,Few skills listed,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mumbai,unspecified,Consulting,Excel / reporting analyst,,0,0,1,1,0,1,0,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+Hyderabad,senior,Unlabelled,Few skills listed,,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,IT & analytics services,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Unknown,senior,IT & analytics services,Excel / reporting analyst,,1,0,0,1,0,0,0,1,0,0,1,0,1,1,1,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,1,0,1,0,1,0,0,1,1,1,0
+Unknown,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,0,0,0,0,1,1,1,1,1,0
+Unknown,senior,Unlabelled,Python + SQL analyst,,1,0,1,1,1,1,0,0,0,0,0,1,0,1,1,1
+Unknown,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mumbai,senior,Unlabelled,Excel / reporting analyst,,0,1,0,1,1,0,0,1,0,0,1,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,1,0,1,0,1,0,0,1,0,1,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Business-facing analyst,,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Hyderabad,unspecified,Staffing / recruiter,Business-facing analyst,,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0
+Delhi NCR,junior,Unlabelled,Excel / reporting analyst,4.0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Pune,senior,Unlabelled,BI / dashboard analyst,31.0,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,0,0,0,1,1,1,1,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Pharma & healthcare,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hyderabad,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,senior,IT & analytics services,Business-facing analyst,,1,1,1,0,0,0,0,1,0,0,0,0,0,1,1,0
+Unknown,senior,IT & analytics services,Few skills listed,,1,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0
+Unknown,unspecified,Pharma & healthcare,Cloud data analyst,,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1
+Chennai,unspecified,IT & analytics services,Python + SQL analyst,,0,1,1,1,1,1,0,0,0,0,1,0,0,1,1,0
+Pune,unspecified,IT & analytics services,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,0,0,1,1,0
+Delhi NCR,unspecified,Staffing / recruiter,Cloud data analyst,,0,0,1,1,1,1,1,1,0,0,1,1,1,1,0,0
+Unknown,senior,Unlabelled,Python + SQL analyst,,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,1
+Pune,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,1,0,0,0,0,0,1,1,1
+Other,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,0,0,1,1,0,0,0,0,0,1,1,0
+Bengaluru,senior,Other global company,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,1,1,1,1,0,1,0,0,1,0,0,0,1,0,1
+Delhi NCR,senior,Staffing / recruiter,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+Unknown,senior,IT & analytics services,Business-facing analyst,,1,1,1,0,0,0,0,1,0,0,0,0,1,1,0,0
+Mumbai,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Delhi NCR,junior,Unlabelled,Few skills listed,,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Bengaluru,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+Unknown,senior,IT & analytics services,BI / dashboard analyst,,1,1,1,0,0,0,1,1,0,0,1,0,0,1,0,0
+Unknown,unspecified,Bank & financial services,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Delhi NCR,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,0,0,1,0
+Unknown,senior,Bank & financial services,BI / dashboard analyst,,0,0,1,1,0,0,1,1,0,0,0,0,0,1,1,0
+Unknown,senior,IT & analytics services,Few skills listed,,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,junior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,IT & analytics services,BI / dashboard analyst,,1,1,1,1,0,0,1,1,0,0,0,0,1,0,0,0
+Delhi NCR,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,0,0,1,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Bank & financial services,Cloud data analyst,,0,0,1,1,1,1,1,0,0,0,1,1,0,1,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,0,0,0,1,0
+Mumbai,unspecified,Unlabelled,Few skills listed,,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+Hyderabad,senior,Product / tech,Excel / reporting analyst,,0,0,1,1,0,0,1,0,0,0,0,0,0,1,0,0
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,1,1,0,0,0,0,1,1,1
+Other,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,unspecified,Staffing / recruiter,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Cloud data analyst,,0,0,1,0,0,0,0,0,0,0,0,1,1,0,1,0
+Mumbai,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pune,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,IT & analytics services,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,junior,Staffing / recruiter,BI / dashboard analyst,,0,0,1,1,1,0,1,1,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1
+Unknown,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Pune,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,0,0,0,1,0,1,1,1,0,0,0,0,0,1,1,0
+Pune,unspecified,Bank & financial services,Cloud data analyst,,0,1,1,0,1,0,0,0,0,0,1,1,0,1,1,0
+Unknown,mid,IT & analytics services,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,0,1,1,0,0,0,0,0,1,1,0
+Bengaluru,junior,Unlabelled,Few skills listed,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Delhi NCR,unspecified,Unlabelled,BI / dashboard analyst,2.5,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0
+Hyderabad,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pune,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,0,1,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Cloud data analyst,,0,1,1,1,1,0,0,0,0,0,1,1,1,1,1,0
+Chennai,unspecified,Other global company,Python + SQL analyst,,0,0,1,0,1,1,0,1,0,1,1,0,0,1,1,1
+Chennai,senior,Unlabelled,Business-facing analyst,15.0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Chennai,senior,Unlabelled,Cloud data analyst,10.0,0,0,1,0,0,1,1,0,0,0,1,1,1,0,0,0
+Unknown,junior,Unlabelled,Few skills listed,,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Hyderabad,senior,Staffing / recruiter,BI / dashboard analyst,,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,3.5,0,0,1,1,1,0,0,1,0,0,0,0,0,0,0,1
+Unknown,unspecified,Pharma & healthcare,Business-facing analyst,,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,1,0,1,1,1,1,1,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Few skills listed,4.0,1,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0
+Unknown,senior,IT & analytics services,BI / dashboard analyst,,1,0,0,0,1,0,1,1,0,0,1,0,0,1,0,0
+Bengaluru,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0
+Other,mid,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,IT & analytics services,Few skills listed,,1,1,0,1,0,0,1,1,0,0,0,0,1,0,0,0
+Bengaluru,senior,IT & analytics services,BI / dashboard analyst,,0,0,1,0,0,1,1,0,0,0,0,0,0,1,0,0
+Hyderabad,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,1,0,1,1,1
+Chennai,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0
+Chennai,unspecified,Unlabelled,Few skills listed,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Delhi NCR,senior,Unlabelled,Python + SQL analyst,21.0,0,0,1,1,1,0,0,1,0,0,0,1,0,1,1,1
+Bengaluru,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,0,0,0,0,0,1,1,1,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Delhi NCR,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+Unknown,mid,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,0
+Hyderabad,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,1,0,1,0,0,1,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,IT & analytics services,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Delhi NCR,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,0
+Delhi NCR,mid,IT & analytics services,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Other,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,1,0,1,0,0,0,0,0,0,1,0
+Delhi NCR,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,1,0,0,0,1,0,0,1,1,1,0
+Pune,unspecified,Unlabelled,Business-facing analyst,,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+Bengaluru,senior,Unlabelled,Business-facing analyst,,0,1,1,0,0,0,1,0,0,0,0,0,0,1,1,0
+Other,senior,Unlabelled,Few skills listed,,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Bank & financial services,Business-facing analyst,,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0
+Unknown,senior,Unlabelled,Business-facing analyst,,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Bengaluru,unspecified,IT & analytics services,Cloud data analyst,,0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0
+Chennai,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,0,0,1,0
+Unknown,unspecified,Staffing / recruiter,Excel / reporting analyst,,0,0,1,1,0,0,1,0,1,0,0,0,0,1,1,0
+Bengaluru,mid,Bank & financial services,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,1,1,1,0,0,1,0,0,1,1,0
+Other,unspecified,Staffing / recruiter,BI / dashboard analyst,,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0
+Hyderabad,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,0,1,1,1,0,0,1,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,14.0,0,0,1,1,1,1,1,1,1,0,1,0,0,1,0,0
+Delhi NCR,mid,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,0,0,1,0
+Hyderabad,unspecified,Unlabelled,Python + SQL analyst,,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+Unknown,senior,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,1,0,0,1,0,0,0,1,0
+Delhi NCR,unspecified,Staffing / recruiter,Python + SQL analyst,6.0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+Pune,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,1,0,0,0,1
+Bengaluru,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0
+Bengaluru,unspecified,Other global company,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Mumbai,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,1,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+Delhi NCR,junior,Unlabelled,Few skills listed,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Chennai,unspecified,Unlabelled,Python + SQL analyst,,1,1,1,0,1,0,0,1,0,1,0,0,0,1,1,1
+Pune,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,0,0,0,0,0,1,0,1,1,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,1,1,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,IT & analytics services,Few skills listed,,1,1,0,0,0,0,1,1,0,0,0,0,1,0,0,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,senior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Chennai,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,0,1,0,0,1,0,0,0,1,0,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,0,1,1,1,1,0,1,0,0,0,1,0,0,1,1,0
+Delhi NCR,unspecified,Unlabelled,Excel / reporting analyst,,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,senior,IT & analytics services,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,senior,IT & analytics services,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+Hyderabad,mid,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,1,0,0,0,1,0
+Chennai,unspecified,Bank & financial services,Excel / reporting analyst,,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0
+Hyderabad,unspecified,Staffing / recruiter,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,0,0,1,1,1,1,1,1,0,1,1,0,0,1,1,0
+Unknown,senior,Unlabelled,Business-facing analyst,,0,1,0,0,0,0,0,0,0,0,1,0,1,1,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,1,0,1,1,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Bengaluru,mid,Staffing / recruiter,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1
+Chennai,senior,Unlabelled,Python + SQL analyst,,0,0,1,0,1,1,0,1,0,1,0,0,0,1,1,1
+Mumbai,unspecified,Unlabelled,BI / dashboard analyst,3.5,0,0,1,0,0,1,1,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,1,0,1,1,1
+Pune,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,0,0,0,0,1,0,1,1,0
+Unknown,unspecified,Bank & financial services,Python + SQL analyst,,0,0,1,0,1,0,0,1,0,0,0,0,0,1,1,1
+Bengaluru,unspecified,IT & analytics services,Cloud data analyst,,0,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0
+Hyderabad,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,1,0,0,1,0,0,0,1,0
+Mumbai,junior,Staffing / recruiter,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,0,0,1,0
+Unknown,senior,IT & analytics services,Cloud data analyst,,1,1,1,0,1,0,1,1,0,0,1,1,1,1,1,0
+Hyderabad,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Delhi NCR,unspecified,Staffing / recruiter,BI / dashboard analyst,,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0
+Unknown,senior,Unlabelled,Python + SQL analyst,,0,1,1,0,1,1,0,1,0,0,0,0,0,1,0,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,1,0,1,0,0,0,1,1,0,0,0,1,0,1,0,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Bank & financial services,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,1,1,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0
+Delhi NCR,unspecified,Unlabelled,Excel / reporting analyst,,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,1,1,1,0,0,1,0,0
+Bengaluru,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,0,1,0,1,1,0
+Unknown,senior,IT & analytics services,Cloud data analyst,,0,0,1,0,0,0,1,0,0,0,1,1,0,0,1,0
+Unknown,mid,Unlabelled,Few skills listed,2.0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,25.0,0,0,1,0,0,0,0,0,0,0,1,1,0,1,1,0
+Unknown,senior,Staffing / recruiter,Cloud data analyst,,0,0,1,0,1,1,1,1,0,1,1,0,1,1,1,0
+Unknown,unspecified,Unlabelled,Cloud data analyst,,0,0,1,0,1,1,1,1,0,0,1,1,1,1,1,0
+Unknown,unspecified,Product / tech,Few skills listed,,0,0,1,1,0,0,1,0,0,0,1,0,0,0,0,0
+Hyderabad,unspecified,Unlabelled,Python + SQL analyst,,1,0,1,0,1,1,0,1,1,0,0,0,0,0,1,0
+Bengaluru,unspecified,Other global company,Cloud data analyst,,0,1,1,1,1,0,1,1,0,0,0,1,1,1,1,0
+Bengaluru,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,1,1,1,0,1,1,1,1,1,1,0,0,0,1,1,0
+Mumbai,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hyderabad,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,0,1,1,1,1,1,0,0,1,1,1
+Delhi NCR,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Chennai,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Pune,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,1,1,1,1,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,BI / dashboard analyst,,0,0,1,0,0,1,1,0,1,0,0,0,0,1,0,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,1,0,0,0,0,0,0,0,1,0,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,,1,0,1,0,1,1,1,1,0,1,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Cloud data analyst,,0,0,1,0,1,1,1,0,0,0,1,0,1,0,0,0
+Unknown,unspecified,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+Unknown,senior,Unlabelled,BI / dashboard analyst,17.5,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Bank & financial services,BI / dashboard analyst,,0,0,1,0,1,0,1,0,0,0,0,0,0,1,1,0
+Bengaluru,senior,Unlabelled,Python + SQL analyst,,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1
+Bengaluru,senior,Staffing / recruiter,BI / dashboard analyst,,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0
+Unknown,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Unknown,unspecified,Unlabelled,BI / dashboard analyst,2.0,1,0,1,0,1,1,1,0,1,0,1,0,0,0,0,0
+Bengaluru,senior,Unlabelled,Business-facing analyst,,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0
+Unknown,senior,Bank & financial services,BI / dashboard analyst,,0,0,1,0,1,0,1,0,0,0,0,0,0,1,1,0
+Pune,senior,Consulting,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Mumbai,senior,Unlabelled,Cloud data analyst,,0,0,1,0,1,1,1,0,0,0,0,1,1,1,0,0
+Bengaluru,senior,Pharma & healthcare,Cloud data analyst,,0,0,1,1,1,0,0,0,0,0,1,1,1,0,1,0
+Unknown,senior,Unlabelled,Excel / reporting analyst,,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+Unknown,unspecified,Other global company,Python + SQL analyst,,0,0,1,0,1,1,0,1,0,1,1,0,0,1,1,1
+Other,unspecified,Unlabelled,Python + SQL analyst,,1,1,1,0,1,0,0,1,0,1,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Few skills listed,,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0
+Unknown,unspecified,Unlabelled,Python + SQL analyst,,1,0,1,0,1,1,0,1,0,0,0,0,0,1,1,0
+Mumbai,junior,Unlabelled,Few skills listed,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Bengaluru,senior,Consulting,Cloud data analyst,,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0
+Hyderabad,unspecified,Unlabelled,Business-facing analyst,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Bengaluru,unspecified,Unlabelled,Python + SQL analyst,,0,0,1,0,1,0,0,0,0,0,1,0,0,1,1,0
