@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <script>/* dark by default; "auto" follows the device */try{var t=localStorage.getItem("wf-theme")||"dark";if(t!=="auto")document.documentElement.dataset.theme=t;}catch(e){document.documentElement.dataset.theme="dark";}</script>
+  <title>Analyze your resume | WorkForce AI</title>
+  <meta name="description" content="Upload your resume and see which Data Analyst jobs in India you match, which skills are missing, and which to learn first. Your resume never leaves your device.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect x='1' y='10' width='10' height='15' rx='3' fill='%23365e1c'/%3E%3Crect x='14' y='1' width='11' height='11' rx='3' fill='%235b9234'/%3E%3Crect x='14' y='15' width='11' height='10' rx='3' fill='%23a9c98a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body data-page="resume">
+<main id="main" class="wrap">
+  <header class="page-head">
+    <div><h1>Analyze your resume</h1><p>See which Data Analyst jobs in India you already match, which skills are missing, and which one to learn first,
+      measured against real job postings.</p></div>
+    <div class="pills"><span class="pill"><span class="dot"></span>Your resume never leaves your device</span></div>
+  </header>
+
+  <div class="grid g2">
+    <section class="card glass" aria-labelledby="t-upload">
+      <div class="card-head"><h3 id="t-upload">1. Add your resume</h3><span class="tag">PDF or text</span></div>
+      <label class="drop" id="drop">
+        <input type="file" id="cv-file" accept=".pdf,.txt,application/pdf,text/plain">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V4M7.5 8.5 12 4l4.5 4.5"/><path d="M4.5 14.5v4a1.5 1.5 0 0 0 1.5 1.5h12a1.5 1.5 0 0 0 1.5-1.5v-4"/></svg>
+        <span><strong>Choose a PDF</strong> or drop it here</span>
+        <span class="note" id="file-status">Read inside your browser. Nothing is uploaded or stored.</span>
+      </label>
+      <label class="label-sm" for="cv-text">…or paste your resume text</label>
+      <textarea id="cv-text" rows="7" placeholder="Paste your resume here (skills, projects, experience)…"></textarea>
+      <button type="button" class="btn btn-primary" id="cv-go" style="margin-top:12px">Analyze my resume
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </section>
+
+    <section class="card glass" aria-labelledby="t-mine">
+      <div class="card-head"><h3 id="t-mine">2. Check your skills</h3><span class="tag" id="found-tag">0 of 14</span></div>
+      <p class="note" style="margin:0 0 12px">We look for the 14 skills we track. Found something wrong? Tap a skill to add or remove it.
+        No resume handy? Just tap the skills you have.</p>
+      <div class="chips" id="my-skills" role="group" aria-labelledby="t-mine"></div>
+      <p class="note" id="evidence"></p>
+    </section>
+  </div>
+
+  <div id="r-empty" class="card glass" style="margin-top:18px">
+    <p style="margin:0;color:var(--ink-2)">Your results appear here once at least one skill is selected.</p>
+  </div>
+
+  <div id="r-results" hidden>
+    <section class="grid g4" style="margin-top:18px" aria-live="polite" aria-label="Your match">
+      <div class="stat glass"><div class="label">Jobs you fully match</div><div class="value" id="r-full">–</div><div class="sub" id="r-full-sub"></div></div>
+      <div class="stat glass"><div class="label">One skill away</div><div class="value" id="r-near">–</div><div class="sub">jobs missing just one skill</div></div>
+      <div class="stat glass"><div class="label">Best-fit job type</div><div class="value value-text" id="r-type">–</div><div class="sub" id="r-type-sub"></div></div>
+      <div class="stat glass"><div class="label">Median pay, jobs you match</div><div class="value" id="r-pay">–</div><div class="sub" id="r-pay-sub"></div></div>
+    </section>
+
+    <div class="grid g2" style="margin-top:18px">
+      <section class="card glass" aria-labelledby="t-fit">
+        <div class="card-head"><h3 id="t-fit">Which job types fit you</h3><span class="tag">share of each type's jobs</span></div>
+        <div class="chart" id="c-fit"></div>
+        <div id="n-fit"></div>
+      </section>
+      <section class="card glass" aria-labelledby="t-next">
+        <div class="card-head"><h3 id="t-next">Towards senior roles</h3><span class="tag">junior → senior jobs</span></div>
+        <p class="note" style="margin:0 0 10px">Skills you don't list yet that senior Data Analyst jobs ask for more than junior ones.</p>
+        <div id="r-senior"></div>
+      </section>
+    </div>
+
+    <section class="card glass" style="margin-top:18px" aria-labelledby="t-gap">
+      <div class="card-head"><h3 id="t-gap">3. Skills to learn next, most useful first</h3><span class="tag">ranked by jobs it would open</span></div>
+      <p class="note" style="margin:0 0 12px">"Jobs it opens" = jobs where this is the only skill you're missing, so learning it makes you a full match.
+        Learning time is our rough average at about 1 hour a day, as guidance, not data.</p>
+      <div class="table-scroll gap-table"><table id="r-gap"></table></div>
+    </section>
+
+    <p class="note" style="margin-top:14px">How this works: we compare your skills with the skills listed in <span id="r-base">–</span> Data Analyst jobs we collected
+      (jobs that name none of the 14 skills are left out). It matches keywords only, so it can miss skills written in unusual ways.
+      Pay figures are advertised salaries from the few ads that list one: rough, not a promise.</p>
+  </div>
+</main>
+</body>
+</html>

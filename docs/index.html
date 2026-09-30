@@ -10,7 +10,7 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect x='1' y='10' width='10' height='15' rx='3' fill='%23365e1c'/%3E%3Crect x='14' y='1' width='11' height='11' rx='3' fill='%235b9234'/%3E%3Crect x='14' y='15' width='11' height='10' rx='3' fill='%23a9c98a'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/site.css">
   <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js" defer></script>
   <script src="assets/app.js" defer></script>
@@ -18,83 +18,121 @@
 <body data-page="home">
 <main id="main" class="wrap">
 
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="hero-copy glass">
-      <span class="pill"><span class="dot"></span>Independent research, India, 2026</span>
-      <h1 id="hero-title">What India's Data Analyst jobs really ask for, and what they pay.</h1>
-      <p class="lede">We collected thousands of live job postings, cleaned them, and ran the statistics ourselves, to find
-        which skills employers want most and which ones actually go with higher salaries.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="skills.html">Explore the findings
+  <!-- 1. cinematic hero: a corridor made of our skill-demand bars -->
+  <section class="cine-hero" aria-labelledby="hero-title">
+    <canvas id="corridor" aria-hidden="true"></canvas>
+    <div class="cine-copy">
+      <h1 id="hero-title">what the market<br>really asks for</h1>
+      <p>We read thousands of live Data Analyst job ads in India to learn which skills employers want, and which ones pay.</p>
+      <div style="margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-primary" href="skills.html" style="background:#f5f5f3;color:#000;border-color:#f5f5f3">See the findings
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-ghost" href="about.html">How we built it</a>
       </div>
     </div>
-    <div class="hero-map glass" id="hero-map">
-      <div class="float a glass"><div class="k">Top hiring city</div><div class="v" id="float-city">–</div><div class="k" id="float-city-sub"></div></div>
-      <div class="float b glass"><div class="k">Most asked-for skill</div><div class="v" id="float-skill">–</div><div class="k" id="float-skill-sub"></div></div>
+    <div class="scroll-hint" aria-hidden="true">scroll</div>
+  </section>
+
+  <section class="kpis" aria-label="Key numbers">
+    <div class="reveal"><div class="label">Analyst jobs analysed</div><div class="value" id="kpi-analyst" data-count="0">0</div><div class="sub">across 10 analyst job titles</div></div>
+    <div class="reveal"><div class="label">Data Analyst jobs</div><div class="value" id="kpi-da" data-count="0">0</div><div class="sub">with every skill checked</div></div>
+    <div class="reveal"><div class="label">Hiring companies</div><div class="value" id="kpi-companies" data-count="0">0</div><div class="sub">named employers</div></div>
+    <div class="reveal"><div class="label">Data Analyst salary</div><div class="value" id="kpi-salary" data-count="0" data-fmt="lakh">₹0L</div><div class="sub" id="kpi-salary-sub">median</div></div>
+  </section>
+
+  <!-- 2. the story, lit word by word as you scroll -->
+  <section class="story" aria-label="Why we built this">
+    <div class="inner">
+      <span class="caps">Not every piece of advice is evidence.</span>
+      <p class="lit" data-lit>the story of workforce ai begins with a question: which skills really get data analysts hired in india, and which ones pay?
+        career advice is mostly opinion. so we collected thousands of live job ads, built our own database, and ran the statistics ourselves.
+        no guesses. just the market, measured.</p>
     </div>
   </section>
 
-  <section class="grid g4" style="margin-top:18px" aria-label="Key numbers">
-    <div class="stat glass reveal"><div class="label">Analyst jobs analysed</div><div class="value" id="kpi-analyst" data-count="0">0</div><div class="sub">across 10 analyst job titles</div></div>
-    <div class="stat glass reveal"><div class="label">Data Analyst jobs</div><div class="value" id="kpi-da" data-count="0">0</div><div class="sub">with every skill checked</div></div>
-    <div class="stat glass reveal"><div class="label">Hiring companies</div><div class="value" id="kpi-companies" data-count="0">0</div><div class="sub">named employers</div></div>
-    <div class="stat glass reveal"><div class="label">Data Analyst salary</div><div class="value" id="kpi-salary" data-count="0" data-fmt="lakh">₹0L</div><div class="sub" id="kpi-salary-sub">median</div></div>
+  <section class="statement reveal">
+    <h2>all that employers ask for.<br>and what it pays.</h2>
+    <p>Every number on this site comes from our own pipeline: live job ads, a SQL database, careful cleaning, regression and clustering.</p>
   </section>
 
-  <section class="section" aria-labelledby="what-title">
+  <!-- 3. the skill ring -->
+  <section class="ring-sec section" aria-labelledby="ring-title">
+    <div class="ring-copy">
+      <div class="reveal">
+        <h2 id="ring-title">fourteen skills.<br>one market.</h2>
+        <p id="ring-text">We checked every Data Analyst job for the same 14 skills, using a full-text search that sees the whole ad, not just the first 500 characters.</p>
+        <a class="btn btn-ghost" href="skills.html">Know more
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <div class="ring" aria-hidden="true"><div class="ring-wrap" id="ring"></div></div>
+  </section>
+
+  <!-- 4. every page as a card, moved sideways by scrolling -->
+  <section class="hscroll" id="hscroll" aria-labelledby="cards-title">
+    <div class="sticky">
+      <div class="head reveal"><h2 id="cards-title">explore the market.<br>bit by bit.</h2></div>
+      <div class="track" id="track"></div>
+    </div>
+  </section>
+
+  <!-- 5. where the jobs are -->
+  <section class="section wrap map-sec" aria-labelledby="map-title">
+    <div class="reveal">
+      <span class="caps" style="color:var(--muted)">Where the jobs are</span>
+      <h2 id="map-title" style="margin-top:18px">six cities hold<br>most of the jobs</h2>
+      <p id="map-text"></p>
+      <a class="btn btn-ghost" href="places.html" style="margin-top:14px">Cities &amp; companies
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="hero-map reveal" id="hero-map">
+      <div class="float a"><div class="k">Top hiring city</div><div class="v" id="float-city">–</div><div class="k" id="float-city-sub"></div></div>
+      <div class="float b"><div class="k">Most asked-for skill</div><div class="v" id="float-skill">–</div><div class="k" id="float-skill-sub"></div></div>
+    </div>
+  </section>
+
+  <!-- findings -->
+  <section class="section wrap" aria-labelledby="find-title">
     <div class="section-head reveal">
-      <h2 id="what-title">What we do</h2>
-      <p>Advice about data analyst careers is mostly opinion. We wanted evidence from the market itself.</p>
-    </div>
-    <div class="grid g3">
-      <article class="card glass purpose reveal">
-        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.3a2.5 2.5 0 1 1 3.4 2.3c-.6.3-1 .9-1 1.6v.5M12 16.6v.1"/></svg></div>
-        <h3>The question</h3>
-        <p>Which skills matter most for Data Analyst jobs in India right now, and which ones go with higher advertised pay?</p>
-      </article>
-      <article class="card glass purpose reveal">
-        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 3.5h5M10.5 3.5V9L5 18.5A1.5 1.5 0 0 0 6.3 20.7h11.4A1.5 1.5 0 0 0 19 18.5L13.5 9V3.5"/><path d="M7.5 14.5h9"/></svg></div>
-        <h3>Our approach</h3>
-        <p>We built our own pipeline: live postings from an official jobs API, a SQL database, careful cleaning, then regression and clustering.</p>
-      </article>
-      <article class="card glass purpose reveal">
-        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></svg></div>
-        <h3>Why it matters</h3>
-        <p>Job seekers can spend their learning time on the skills that actually open doors and lift pay, not on guesses.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="how-title">
-    <div class="section-head reveal">
-      <h2 id="how-title">How it works</h2>
-      <p>Five steps from raw job ads to the charts on this site. Every decision is logged, with its reasoning.</p>
-    </div>
-    <ol class="steps" style="list-style:none;padding:0;margin:0">
-      <li class="step glass reveal"><div class="n">1</div><h3>Collect</h3><p>Weekly runs pull every open analyst posting in India from the Adzuna API and public company job boards.</p><div class="tech">Python, GitHub Actions</div></li>
-      <li class="step glass reveal"><div class="n">2</div><h3>Store</h3><p>Raw snapshots are saved untouched, then loaded into a SQL database that tracks each posting over time.</p><div class="tech">SQLite, SQL</div></li>
-      <li class="step glass reveal"><div class="n">3</div><h3>Clean</h3><p>Salaries in consistent units, experience levels, cities, and one name per company.</p><div class="tech">pandas</div></li>
-      <li class="step glass reveal"><div class="n">4</div><h3>Analyse</h3><p>Skill demand, a salary regression at the same experience and city, and clustering into job types.</p><div class="tech">statsmodels, scikit-learn</div></li>
-      <li class="step glass reveal"><div class="n">5</div><h3>Present</h3><p>This website: interactive charts built from aggregated results only.</p><div class="tech">HTML, JavaScript, ECharts</div></li>
-    </ol>
-  </section>
-
-  <section class="section" aria-labelledby="find-title">
-    <div class="section-head reveal">
-      <h2 id="find-title">What we found</h2>
+      <h2 id="find-title">what we found</h2>
       <p>Four findings from our own data. Each one links to the evidence.</p>
     </div>
     <div class="grid g2" id="findings"></div>
   </section>
 
-  <section class="section">
-    <div class="card glass reveal" style="padding:34px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px">
-      <div><h2 style="margin:0 0 6px;font-weight:400;font-size:1.8rem;letter-spacing:-.02em">Find your own slice of the market</h2>
-        <p style="margin:0;color:var(--ink-2)">Pick a city, experience level and skills, and see how many jobs match and what they pay.</p></div>
-      <a class="btn btn-primary" href="explorer.html">Open the explorer
+  <!-- 6. door of light: the resume check -->
+  <section class="door-sec section" id="door" aria-labelledby="door-title">
+    <div class="door" aria-hidden="true"><div class="leaf l"></div><div class="gap"></div><div class="leaf r"></div><div class="floor"></div></div>
+    <div class="door-copy reveal">
+      <span class="caps" style="color:rgba(245,245,243,.6)">New: resume check</span>
+      <h2 id="door-title" style="margin-top:18px">not every skill<br>opens a door</h2>
+      <p>Add your resume and see which jobs you already match, which skills are missing, and which one opens the most doors. It never leaves your device.</p>
+      <a class="btn btn-primary" href="resume.html">Analyze your resume
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </section>
+
+  <!-- how it works -->
+  <section class="section wrap" aria-labelledby="how-title">
+    <div class="section-head reveal">
+      <h2 id="how-title">how it works</h2>
+      <p>Five steps from raw job ads to the charts on this site. Every decision is logged, with its reasoning.</p>
+    </div>
+    <ol class="steps" style="list-style:none;padding:0;margin:0">
+      <li class="step reveal"><div class="n">01</div><h3>Collect</h3><p>Weekly runs pull every open analyst posting in India from the Adzuna API and public company job boards.</p><div class="tech">Python, GitHub Actions</div></li>
+      <li class="step reveal"><div class="n">02</div><h3>Store</h3><p>Raw snapshots are saved untouched, then loaded into a SQL database that tracks each posting over time.</p><div class="tech">SQLite, SQL</div></li>
+      <li class="step reveal"><div class="n">03</div><h3>Clean</h3><p>Salaries in consistent units, experience levels, cities, and one name per company.</p><div class="tech">pandas</div></li>
+      <li class="step reveal"><div class="n">04</div><h3>Analyse</h3><p>Skill demand, a salary regression at the same experience and city, and clustering into job types.</p><div class="tech">statsmodels, scikit-learn</div></li>
+      <li class="step reveal"><div class="n">05</div><h3>Present</h3><p>This website: interactive charts built from aggregated results only.</p><div class="tech">HTML, JavaScript, ECharts</div></li>
+    </ol>
+  </section>
+
+  <!-- 7. privacy promise -->
+  <section class="promise" aria-labelledby="promise-title">
+    <svg class="shield" viewBox="0 0 64 72" fill="none" stroke-width="3" aria-hidden="true"><path d="M4 4h56v38L32 68 4 42z"/><rect x="22" y="32" width="20" height="16" rx="2"/><path d="M26 32v-5a6 6 0 0 1 12 0v5"/></svg>
+    <span class="caps" id="promise-title">Your resume isn't our business. Keeping it private is.</span>
+    <div class="inner">
+      <p class="lit sans" data-lit>resumes are read inside your own browser and never uploaded. we publish only aggregated results, never job listings.
+        the job data comes from the official adzuna api, used for research.</p>
     </div>
   </section>
 </main>

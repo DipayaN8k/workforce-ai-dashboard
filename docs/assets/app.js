@@ -15,17 +15,17 @@ const DARK = savedTheme() === "dark" || (savedTheme() === "auto" && DEVICE_DARK.
 // ---------- design tokens for charts (dataviz reference palette; its dark-mode steps at night) ----------
 const C = DARK ? {
   blue: "#3987e5", orange: "#d95926", aqua: "#199e70", yellow: "#c98500", magenta: "#d55181", green: "#008300",
-  red: "#e66767", neutral: "#5d625d", ink: "#eef0ec", ink2: "#b9beb7", muted: "#8b918a", grid: "rgba(255,255,255,.07)",
-  accent: "#7bb851", surface: "#202421", axis: "rgba(255,255,255,.18)", mark: "rgba(255,255,255,.25)",
-  tipBg: "rgba(34,38,35,.97)", tipLine: "rgba(255,255,255,.1)",
+  red: "#e66767", neutral: "#5d625d", ink: "#f5f5f3", ink2: "#b4b4b0", muted: "#85857f", grid: "rgba(255,255,255,.07)",
+  accent: "#8fd16a", surface: "#0b0b0b", axis: "rgba(255,255,255,.18)", mark: "rgba(255,255,255,.25)",
+  tipBg: "rgba(16,16,16,.97)", tipLine: "rgba(255,255,255,.12)",
 } : {
   blue: "#2a78d6", orange: "#eb6834", aqua: "#1baf7a", yellow: "#eda100", magenta: "#e87ba4", green: "#008300",
-  red: "#e34948", neutral: "#b4b6b0", ink: "#15171a", ink2: "#4a4e52", muted: "#7d8280", grid: "rgba(20,24,20,.07)",
-  accent: "#4b7d2b", surface: "#ffffff", axis: "rgba(20,24,20,.15)", mark: "rgba(20,24,20,.2)",
+  red: "#e34948", neutral: "#b4b6b0", ink: "#0b0b0b", ink2: "#45474a", muted: "#76797b", grid: "rgba(20,24,20,.07)",
+  accent: "#3f7d1f", surface: "#ffffff", axis: "rgba(20,24,20,.15)", mark: "rgba(20,24,20,.2)",
   tipBg: "rgba(255,255,255,.96)", tipLine: "rgba(20,24,20,.08)",
 };
 // Sequential ramp: light = near-white to deep blue; dark = near the surface to bright blue.
-const SEQ = DARK ? ["#1b2330", "#1c3a63", "#184f95", "#1c5cab", "#256abf", "#2a78d6", "#3987e5"]
+const SEQ = DARK ? ["#141a22", "#1c3a63", "#184f95", "#1c5cab", "#256abf", "#2a78d6", "#3987e5"]
                  : ["#f2f6fb", "#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95"];
 const JOB_TYPE_COLOR = {
   "BI / dashboard analyst": C.blue, "Business-facing analyst": C.orange, "Python + SQL analyst": C.aqua,
@@ -52,6 +52,7 @@ const ICON = {
   market: '<path d="M4 19V5M4 19h16"/><path d="m7 15 4-4 3 3 5-6"/>',
   explore: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.5-4.5"/>',
   about: '<circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5M12 7.6v.1"/>',
+  resume: '<path d="M7 3.5h7l4 4v13H7a1.5 1.5 0 0 1-1.5-1.5V5A1.5 1.5 0 0 1 7 3.5z"/><path d="M14 3.5v4h4M9 12.5h6M9 16h4"/>',
   arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
   question: '<circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.3a2.5 2.5 0 1 1 3.4 2.3c-.6.3-1 .9-1 1.6v.5M12 16.6v.1"/>',
   flask: '<path d="M9.5 3.5h5M10.5 3.5V9L5 18.5A1.5 1.5 0 0 0 6.3 20.7h11.4A1.5 1.5 0 0 0 19 18.5L13.5 9V3.5"/><path d="M7.5 14.5h9"/>',
@@ -63,26 +64,83 @@ const LOGO = `<svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"
 const PAGES = [
   ["home", "index.html", "Home"], ["skills", "skills.html", "Skills"], ["salary", "salary.html", "Salary"],
   ["types", "job-types.html", "Job types"], ["places", "places.html", "Cities & companies"],
-  ["market", "market.html", "Market"], ["explore", "explorer.html", "Explorer"], ["about", "about.html", "About"],
+  ["market", "market.html", "Market"], ["explore", "explorer.html", "Explorer"],
+  ["resume", "resume.html", "Analyze your resume"], ["about", "about.html", "About"],
 ];
-const ICON_FOR = { home: "home", skills: "skills", salary: "salary", types: "types", places: "places", market: "market", explore: "explore", about: "about" };
+const ICON_FOR = { home: "home", skills: "skills", salary: "salary", types: "types", places: "places", market: "market", explore: "explore", resume: "resume", about: "about" };
 
-// ---------- chrome: header + footer on every page ----------
+// ---------- chrome (D28): header, ☰ full-screen menu, floating resume box, footer ----------
+const MENU_ICON = '<path d="M4 8h16M4 16h16"/>';
+const CLOSE_ICON = '<path d="M6 6l12 12M18 6 6 18"/>';
+const svgIcon = (paths) => `<svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">${paths}</svg>`;
+
 function renderChrome(page, data) {
-  const nav = PAGES.map(([id, href, label]) =>
-    `<a href="${href}"${id === page ? ' aria-current="page"' : ""}>${icon(ICON_FOR[id])}<span>${label}</span></a>`).join("");
+  const links = PAGES.map(([id, href, label], i) =>
+    `<li><a href="${href}"${id === page ? ' aria-current="page"' : ""} style="transition-delay:${60 + i * 40}ms"><small>${String(i + 1).padStart(2, "0")}</small><span>${label}</span></a></li>`).join("");
+  const w = data.meta.data_window;
   document.body.insertAdjacentHTML("afterbegin",
     `<a class="skip" href="#main">Skip to content</a>
-     <header class="site-head"><a class="brand" href="index.html">${LOGO}<span>WorkForce AI</span></a>
-     <nav class="nav" aria-label="Pages">${nav}</nav>
-     <button type="button" class="theme-toggle" id="theme-toggle"></button></header>`);
+     <header class="site-head" id="site-head">
+       <a class="brand" href="index.html">${LOGO}<span>WorkForce AI</span></a>
+       ${page === "home" ? "" : `<a class="head-btn head-cta" href="index.html" aria-label="Home">${icon("home")}<span>Home</span></a>`}
+       <button type="button" class="head-btn icon" id="theme-toggle"></button>
+       <button type="button" class="head-btn icon" id="menu-open" aria-label="Open menu" aria-expanded="false" aria-controls="menu">${svgIcon(MENU_ICON)}</button>
+     </header>
+     <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Pages" hidden>
+       <div class="menu-top"><a class="brand" href="index.html">${LOGO}<span>WorkForce AI</span></a>
+         <button type="button" class="head-btn icon" id="menu-close" aria-label="Close menu">${svgIcon(CLOSE_ICON)}</button></div>
+       <ul class="menu-list">${links}</ul>
+       <div class="menu-foot">Data Analyst jobs in India, measured. Built by Dipayan &amp; Sayak.</div>
+     </div>`);
+  if (page !== "resume") {
+    document.body.insertAdjacentHTML("beforeend",
+      `<a class="float-cta" id="float-cta" href="resume.html"><span class="mark" aria-hidden="true">${"<i></i>".repeat(16)}</span><span>analyze<br>your resume</span></a>`);
+  }
   wireThemeToggle();
-  const w = data.meta.data_window;
+  wireMenu();
+  wireHeader(page);
+  const col = (h, items) => `<div><h4>${h}</h4><ul>${items.map(([href, t, ext]) =>
+    `<li><a href="${href}"${ext ? ' target="_blank" rel="noopener"' : ""}>${t}</a></li>`).join("")}</ul></div>`;
   document.body.insertAdjacentHTML("beforeend",
-    `<footer class="site-foot glass">
-       <div>Built by <strong>Dipayan &amp; Sayak</strong>. Data collected ${w.first_run.slice(0, 10)} → ${w.last_run.slice(0, 10)}.</div>
-       <div>Job &amp; salary data: <a href="https://www.adzuna.in" target="_blank" rel="noopener">The Adzuna API</a>. Aggregated results only; no job listings are published.</div>
+    `<footer class="site-foot">
+       <div><a class="brand" href="index.html" style="margin:0 0 16px">${LOGO}<span>WorkForce AI</span></a>
+         <p style="margin:0;max-width:320px">Data Analyst jobs in India, measured. Built by <strong>Dipayan &amp; Sayak</strong>.</p></div>
+       ${col("Findings", [["skills.html", "Skills"], ["salary.html", "Salary"], ["job-types.html", "Job types"], ["places.html", "Cities &amp; companies"], ["market.html", "Market"]])}
+       ${col("Tools", [["explorer.html", "Explorer"], ["resume.html", "Analyze your resume"]])}
+       ${col("Project", [["about.html", "How we built it"], ["https://www.adzuna.in", "Data: The Adzuna API", true]])}
+       <div class="fine"><span>Data collected ${w.first_run.slice(0, 10)} → ${w.last_run.slice(0, 10)}. Aggregated results only; no job listings are published.</span>
+         <span>Job &amp; salary data: The Adzuna API</span></div>
      </footer>`);
+}
+
+function wireMenu() {
+  const menu = $("#menu"), openBtn = $("#menu-open"), closeBtn = $("#menu-close");
+  const setOpen = (open) => {
+    if (open) { menu.hidden = false; requestAnimationFrame(() => menu.classList.add("open")); }
+    else { menu.classList.remove("open"); setTimeout(() => { if (!menu.classList.contains("open")) menu.hidden = true; }, 350); }
+    document.body.classList.toggle("menu-open", open);
+    openBtn.setAttribute("aria-expanded", String(open));
+    (open ? closeBtn : openBtn).focus();
+  };
+  openBtn.addEventListener("click", () => setOpen(true));
+  closeBtn.addEventListener("click", () => setOpen(false));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && menu.classList.contains("open")) setOpen(false); });
+}
+
+// Header turns solid once you scroll; on the home page that happens after the hero.
+function wireHeader(page) {
+  const head = $("#site-head"), cta = $("#float-cta");
+  const onScroll = () => {
+    const limit = page === "home" ? window.innerHeight * 0.85 : 10;
+    head.classList.toggle("solid", window.scrollY > limit);
+    // the floating box stays out of the way on the hero and over the footer
+    if (cta) {
+      const nearEnd = window.innerHeight + window.scrollY > document.body.scrollHeight - 260;
+      cta.classList.toggle("hide", (page === "home" && window.scrollY < window.innerHeight * 0.6) || nearEnd);
+    }
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
 }
 
 // ---------- theme switch: Dark (default) -> Light -> Auto -> Dark ----------
@@ -154,7 +212,7 @@ function base(extra = {}) {
     aria: { enabled: true },
     tooltip: {
       backgroundColor: C.tipBg, borderColor: C.tipLine, borderWidth: 1,
-      textStyle: { color: C.ink, fontFamily: FONT, fontSize: 13 }, extraCssText: "border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.1);",
+      textStyle: { color: C.ink, fontFamily: FONT, fontSize: 13 }, extraCssText: "border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.25);",
     },
     grid: { left: 12, right: 24, top: 18, bottom: 12, containLabel: true },
     ...extra,
@@ -293,18 +351,171 @@ function indiaMap(demand) {
   return `<svg viewBox="8 40 544 570" role="img" aria-label="${esc(label)}">${bg}${links}${nodes}</svg>`;
 }
 
+// Hero art (D28): a corridor whose columns are our skill-demand bars, with a
+// slow camera drift and warm light slipping between the columns. Canvas 2D.
+function corridor(canvas, shares) {
+  const ctx = canvas.getContext("2d");
+  const COLS = 24, GAP = 0.62, DEPTH = 0.26;          // columns per wall, spacing, column thickness (world units)
+  const heights = Array.from({ length: COLS }, (_, i) => 2.1 + 3.4 * shares[i % shares.length]);
+  let W, H, dpr, t0 = performance.now(), running = true;
+  const size = () => {
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = canvas.clientWidth; H = canvas.clientHeight;
+    canvas.width = W * dpr; canvas.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  };
+  size(); window.addEventListener("resize", size);
+  const draw = (now) => {
+    const t = (now - t0) / 1000;
+    const drift = REDUCED ? 0 : (t * 0.35) % GAP;       // camera slowly walks forward
+    const f = Math.min(W, H * 1.4) * 0.62, cx = W / 2, hy = H * 0.5;
+    const P = (x, y, z) => [cx + (x * f) / z, hy + (y * f) / z];
+    ctx.fillStyle = "#050505"; ctx.fillRect(0, 0, W, H);
+    // light at the end of the corridor
+    const g = ctx.createRadialGradient(cx, hy + 20, 0, cx, hy + 20, H * 0.55);
+    g.addColorStop(0, "rgba(210,215,220,.55)"); g.addColorStop(0.25, "rgba(120,125,130,.18)"); g.addColorStop(1, "rgba(0,0,0,0)");
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    // floor lines
+    ctx.strokeStyle = "rgba(255,255,255,.06)"; ctx.lineWidth = 1;
+    for (const x of [-1.6, -0.55, 0.55, 1.6]) { const [a1, b1] = P(x, 1, 0.6), [a2, b2] = P(x, 1, 30); ctx.beginPath(); ctx.moveTo(a1, b1); ctx.lineTo(a2, b2); ctx.stroke(); }
+    // columns, far to near, both walls
+    for (let k = COLS - 1; k >= 0; k--) {
+      const z = 0.9 + k * GAP - drift;
+      if (z < 0.35) continue;
+      const h = heights[(k + Math.floor((t * 0.35) / GAP)) % COLS];
+      const fog = Math.min(1, z / (COLS * GAP * 0.9));          // far columns fade into the haze
+      for (const side of [-1, 1]) {
+        const x = side * 1.5, xo = x + side * 0.5;              // inner face and back of the column
+        const [ax, ay] = P(x, 1, z), [bx, by] = P(x, 1 - h, z), [cx2, cy2] = P(x, 1 - h, z + DEPTH), [dx, dy] = P(x, 1, z + DEPTH);
+        const [ex, ey] = P(xo, 1, z), [fx, fy] = P(xo, 1 - h, z);
+        // front face
+        ctx.beginPath(); ctx.moveTo(ex, ey); ctx.lineTo(fx, fy); ctx.lineTo(bx, by); ctx.lineTo(ax, ay); ctx.closePath();
+        ctx.fillStyle = `rgba(${22 + 30 * fog},${23 + 30 * fog},${24 + 30 * fog},1)`; ctx.fill();
+        // inner face, facing the corridor
+        ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(bx, by); ctx.lineTo(cx2, cy2); ctx.lineTo(dx, dy); ctx.closePath();
+        ctx.fillStyle = `rgba(${40 + 40 * fog},${42 + 40 * fog},${45 + 40 * fog},1)`; ctx.fill();
+        // warm light slipping through the gap behind some columns (pulses slowly)
+        const glow = Math.max(0, Math.sin(t * 0.8 + k * 1.7 + (side > 0 ? 1.3 : 0)));
+        if (k % 3 !== 0 && glow > 0.2 && z > 1.1) {
+          const lg = ctx.createLinearGradient(dx, dy, cx2, cy2);
+          lg.addColorStop(0, `rgba(255,190,120,${0.75 * glow * (1 - fog * 0.6)})`); lg.addColorStop(1, "rgba(255,230,190,0)");
+          ctx.strokeStyle = lg; ctx.lineWidth = Math.max(1, (6 * f) / z / 60 * glow); ctx.shadowColor = "rgba(255,170,90,.9)"; ctx.shadowBlur = 24 * glow;
+          ctx.beginPath(); ctx.moveTo(dx, dy); ctx.lineTo(cx2, cy2); ctx.stroke(); ctx.shadowBlur = 0;
+        }
+        // cool rim light on the column edge
+        ctx.strokeStyle = `rgba(255,255,255,${0.08 + 0.1 * (1 - fog)})`; ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(bx, by); ctx.stroke();
+      }
+    }
+    if (running && !REDUCED) requestAnimationFrame(draw);
+  };
+  // pause when the hero is off screen (saves battery)
+  if ("IntersectionObserver" in window) new IntersectionObserver(([e]) => {
+    const was = running; running = e.isIntersecting; if (running && !was) requestAnimationFrame(draw);
+  }).observe(canvas);
+  requestAnimationFrame(draw);
+}
+
+// The 14 skills on a ring that turns as you scroll past it.
+function skillRing(el, demand) {
+  const sorted = [...demand].sort((a, b) => b.share - a.share);
+  const n = sorted.length, R = window.innerWidth < 900 ? 300 : 380;
+  el.innerHTML = sorted.map((r, i) => {
+    const a = (360 / n) * i;
+    return `<div class="rc${i === 0 ? " hot" : ""}" style="transform:rotate(${a}deg) translate(${R}px) rotate(90deg)"><span>${esc(r.skill)}</span><b>${pct(r.share)}</b></div>`;
+  }).join("");
+  if (REDUCED) return;
+  const sec = el.closest(".ring-sec");
+  const spin = () => {
+    const r = sec.getBoundingClientRect(), p = (window.innerHeight - r.top) / (window.innerHeight + r.height);
+    el.style.transform = `rotate(${(-120 + 160 * Math.min(1, Math.max(0, p))).toFixed(2)}deg)`;
+  };
+  window.addEventListener("scroll", spin, { passive: true }); spin();
+}
+
+// A card per page; on desktop the vertical scroll slides the row sideways.
+const CARD_ART = {  // simple glowing line drawings, one per page
+  skills: '<rect x="12" y="60" width="14" height="40"/><rect x="34" y="40" width="14" height="60"/><rect x="56" y="18" width="14" height="82"/><rect x="78" y="48" width="14" height="52"/>',
+  salary: '<path d="M30 20h44M30 38h44M30 20c26 0 26 36 0 36l36 34"/>',
+  types: '<circle cx="36" cy="36" r="18"/><circle cx="72" cy="42" r="12"/><circle cx="48" cy="76" r="14"/><circle cx="82" cy="80" r="8"/>',
+  places: '<path d="M52 98S24 70 24 46a28 28 0 0 1 56 0c0 24-28 52-28 52z"/><circle cx="52" cy="46" r="10"/>',
+  market: '<path d="M14 90h80"/><path d="m18 78 22-26 16 14 34-40"/><path d="M76 26h14v14"/>',
+  explore: '<circle cx="46" cy="46" r="26"/><path d="m66 66 24 24"/>',
+  resume: '<path d="M30 10h30l18 18v66H30z"/><path d="M60 10v18h18M40 52h28M40 66h28M40 80h16"/>',
+};
+const CARD_GLOW = {
+  skills: ["#3987e5", "#1b2a55"], salary: ["#c98500", "#3a2400"], types: ["#d55181", "#3d0f2a"], places: ["#199e70", "#07301f"],
+  market: ["#d95926", "#3a1405"], explore: ["#8a7cf0", "#1e1846"], resume: ["#8fd16a", "#16300b"],
+};
+function pageCards(el, D) {
+  const o = D.overview;
+  const cards = [
+    ["skills", "skills.html", "Skills", `${o.top_skill} leads: asked in ${pct(o.top_skill_share)} of jobs`],
+    ["salary", "salary.html", "Salary", "Which skills go with higher pay"],
+    ["types", "job-types.html", "Job types", "Six kinds of analyst job, found by clustering"],
+    ["places", "places.html", "Cities & companies", `${o.top_city} hires the most analysts`],
+    ["market", "market.html", "Market", "Freshers, remote work, AI and education"],
+    ["explore", "explorer.html", "Explorer", "Pick a city, level and skills. See your slice."],
+    ["resume", "resume.html", "Resume check", "Match your resume against the market"],
+  ];
+  el.innerHTML = cards.map(([k, href, label, line]) => {
+    const [c1, c2] = CARD_GLOW[k];
+    return `<a class="pcard" href="${href}">
+      <div class="top"><div class="lbl">${icon(ICON_FOR[k] || k)}${esc(label)}</div><h3>${esc(line)}</h3>
+        <span class="more">Know more ${icon("arrow")}</span></div>
+      <div class="art" style="background:radial-gradient(90% 70% at 50% 100%, ${c1} 0%, ${c2} 45%, transparent 75%)">
+        <svg viewBox="0 0 104 104" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${CARD_ART[k]}</svg></div></a>`;
+  }).join("");
+  const sec = $("#hscroll"), wide = window.matchMedia("(min-width: 761px)");
+  const setup = () => {
+    if (!wide.matches || REDUCED) { sec.style.height = ""; el.style.transform = ""; return; }
+    const extra = Math.max(0, el.scrollWidth - window.innerWidth);
+    sec.style.height = `${window.innerHeight + extra}px`;
+    const move = () => {
+      const r = sec.getBoundingClientRect(), p = Math.min(1, Math.max(0, -r.top / Math.max(1, extra)));
+      el.style.transform = `translateX(${(-p * extra).toFixed(1)}px)`;
+    };
+    window.addEventListener("scroll", move, { passive: true }); move();
+  };
+  setup(); window.addEventListener("resize", setup);
+}
+
+// Words light up one by one as a paragraph scrolls through the screen.
+function wireLit() {
+  document.querySelectorAll("[data-lit]").forEach((p) => {
+    p.innerHTML = p.textContent.trim().split(/\s+/).map((w) => `<span class="w">${esc(w)}</span> `).join("");
+    const words = [...p.querySelectorAll(".w")];
+    if (REDUCED) { words.forEach((w) => w.classList.add("on")); return; }
+    const light = () => {
+      const r = p.getBoundingClientRect(), vh = window.innerHeight;
+      const prog = Math.min(1, Math.max(0, (vh * 0.85 - r.top) / (r.height + vh * 0.35)));
+      const k = Math.round(prog * words.length);
+      words.forEach((w, i) => w.classList.toggle("on", i < k));
+    };
+    window.addEventListener("scroll", light, { passive: true }); light();
+  });
+}
+
 function pageHome(D) {
   const o = D.overview, t = D.tables;
-  $("#hero-map").insertAdjacentHTML("afterbegin", indiaMap(t.city_demand));
+  corridor($("#corridor"), t.skill_demand.map((r) => r.share));
   $("#kpi-analyst").dataset.count = o.analyst_postings;
   $("#kpi-da").dataset.count = o.da_postings;
   $("#kpi-companies").dataset.count = o.companies;
   $("#kpi-salary").dataset.count = o.da_median_salary / 1e5;
   $("#kpi-salary-sub").textContent = `median, from ${o.da_salaried} ads that list a salary`;
+
+  skillRing($("#ring"), t.skill_demand);
+  pageCards($("#track"), D);
+
+  $("#hero-map").insertAdjacentHTML("afterbegin", indiaMap(t.city_demand));
   $("#float-city").textContent = o.top_city;
   $("#float-city-sub").textContent = `${pct(o.top_city_share_of_known)} of jobs that name a metro`;
   $("#float-skill").textContent = o.top_skill;
   $("#float-skill-sub").textContent = `asked for in ${pct(o.top_skill_share)} of Data Analyst jobs`;
+  const named = t.city_demand.filter((r) => r.city !== "Unknown");
+  const metros = named.filter((r) => METROS[r.city]).reduce((n, r) => n + r.all_analyst_postings, 0);
+  const allNamed = named.reduce((n, r) => n + r.all_analyst_postings, 0);
+  $("#map-text").textContent = `Of the analyst jobs that name a city, ${pct(metros / allNamed)} are in these six metros, and ${o.top_city} alone has ${pct(o.top_city_share_of_known)}. Dot size = number of postings.`;
 
   const jp = Object.fromEntries(t.job_type_pay.map((r) => [r.job_type, r]));
   const lv = {}; t.skill_demand_by_level.forEach((r) => { (lv[r.skill] ||= {})[r.experience_level] = r.share; });
@@ -323,6 +534,7 @@ function pageHome(D) {
   $("#findings").innerHTML = cards.map(([big, h, p, href]) =>
     `<a class="finding glass reveal" href="${href}"><div class="big">${esc(big)}</div><h3>${esc(h)}</h3><p>${esc(p)}</p>
      <span class="go">See the evidence ${icon("arrow")}</span></a>`).join("");
+  onVisible($("#door"), () => $("#door").classList.add("in"));
 }
 
 // ---------- skills ----------
@@ -576,6 +788,191 @@ function pageExplore(D) {
   update();
 }
 
+// ---------- resume analyzer (D27) ----------
+// Everything runs in the visitor's browser: the resume is never uploaded or stored.
+// Words that count as each of our 14 skills (case doesn't matter).
+const SKILL_WORDS = {
+  "SQL": [/\bsql\b/, /\bmysql\b/, /\bpostgre(s|sql)\b/, /\bt-sql\b/, /\bpl\/sql\b/, /\bbigquery\b/, /\bsnowflake\b/, /\bsqlite\b/, /structured query language/],
+  "Excel": [/\bexcel\b/, /\bspreadsheets?\b/, /\bv-?lookups?\b/, /\bx-?lookups?\b/, /\bpivot ?tables?\b/, /\bgoogle sheets\b/],
+  "Python": [/\bpython\b/, /\bpandas\b/, /\bnumpy\b/, /\bjupyter\b/, /\bmatplotlib\b/, /\bseaborn\b/],
+  "Power BI": [/\bpower ?bi\b/, /\bdax\b/],
+  "Tableau": [/\btableau\b/],
+  "Statistics": [/\bstatistic(s|al)\b/, /\bhypothesis test/, /\bregression\b/, /\bprobability\b/, /\bt-tests?\b/, /\banova\b/, /\bchi-square/],
+  "A/B testing": [/\ba\s?\/\s?b test/, /\bab test/, /\bsplit test/, /\bexperiment(ation| design)\b/],
+  "Machine learning": [/\bmachine learning\b/, /\bml\b/, /\bscikit-learn\b/, /\bsklearn\b/, /\bpredictive model/, /\brandom forest\b/, /\bxgboost\b/, /\bdeep learning\b/],
+  "ETL": [/\betl\b/, /\belt\b/, /\bdata pipelines?\b/, /\bairflow\b/, /\bssis\b/, /\binformatica\b/, /\bdbt\b/, /extract,? transform/],
+  "AWS": [/\baws\b/, /amazon web services/, /\bredshift\b/, /\bathena\b/, /\bsagemaker\b/],
+  "Azure": [/\bazure\b/, /\bsynapse\b/, /\bdata factory\b/],
+  "Stakeholder mgmt": [/\bstakeholders?\b/, /\bclient-facing\b/, /\bcross-functional\b/, /\brequirements? gathering\b/],
+  "Communication": [/\bcommunication\b/, /\bpresentations?\b/, /\bpresented\b/, /\bstorytelling\b/, /\bpublic speaking\b/],
+  "Generative AI": [/\bgenerative ai\b/, /\bgen ?ai\b/, /\bllms?\b/, /\bchatgpt\b/, /\bprompt engineering\b/, /\blangchain\b/, /\bopenai\b/],
+};
+// Rough average time to a job-ready level at ~1 hour a day. Guidance chosen by the team, not measured data.
+const LEARN_TIME = {
+  "Excel": "1 month", "SQL": "2 months", "Python": "3 months", "Power BI": "1 month", "Tableau": "1 month",
+  "Statistics": "2 months", "A/B testing": "1 month (after Statistics)", "Machine learning": "3 months (after Python + Statistics)",
+  "ETL": "1 month (after SQL)", "AWS": "2 months", "Azure": "2 months", "Generative AI": "1 month",
+  "Communication": "Ongoing: practise in presentations and projects", "Stakeholder mgmt": "Ongoing: grows with real project work",
+};
+
+function findSkills(text) {
+  const t = text.toLowerCase().replace(/\s+/g, " ");
+  const found = {};
+  for (const [skill, pats] of Object.entries(SKILL_WORDS)) {
+    for (const re of pats) { const m = t.match(re); if (m) { found[skill] = m[0]; break; } }
+  }
+  return found;  // skill -> the word that matched
+}
+
+// pdf.js is loaded only when someone picks a PDF (it's big), from cdnjs.
+let pdfjsReady;
+function loadPdfJs() {
+  const V = "3.11.174", base = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${V}/`;
+  pdfjsReady ||= new Promise((ok, fail) => {
+    const s = document.createElement("script");
+    s.src = base + "pdf.min.js";
+    s.onload = () => { window.pdfjsLib.GlobalWorkerOptions.workerSrc = base + "pdf.worker.min.js"; ok(window.pdfjsLib); };
+    s.onerror = () => fail(new Error("the PDF reader didn't load"));
+    document.head.appendChild(s);
+  });
+  return pdfjsReady;
+}
+async function pdfText(file) {
+  const lib = await loadPdfJs();
+  const doc = await lib.getDocument({ data: await file.arrayBuffer() }).promise;
+  let out = "";
+  for (let i = 1; i <= doc.numPages; i++) {
+    const page = await doc.getPage(i);
+    out += (await page.getTextContent()).items.map((it) => it.str).join(" ") + "\n";
+  }
+  return out;
+}
+
+function pageResume(D) {
+  const skills = Object.values(D.meta.skills);
+  // Only jobs that name at least one of our skills can be matched against.
+  const jobs = D.tables.explorer.map((r) => ({ ...r, need: skills.filter((s) => r[s] === 1) })).filter((r) => r.need.length);
+  const demand = Object.fromEntries(D.tables.skill_demand.map((r) => [r.skill, r.share]));
+  const signal = Object.fromEntries(D.tables.skill_quadrant.map((r) => [r.skill, r.pay_signal]));
+  const lv = {}; D.tables.skill_demand_by_level.forEach((r) => { (lv[r.skill] ||= {})[r.experience_level] = r.share; });
+  const typeOrder = D.tables.job_types.map((r) => r.job_type).filter((n) => n !== "Few skills listed");
+  const mine = new Set();
+  let evidence = {}, fitChart, fitOpt, fitPending = false;
+
+  $("#r-base").textContent = num(jobs.length);
+  $("#my-skills").innerHTML = skills.map((s) => `<button type="button" class="chip" aria-pressed="false" data-v="${esc(s)}">${esc(s)}</button>`).join("");
+
+  const update = () => {
+    document.querySelectorAll("#my-skills .chip").forEach((b) => b.setAttribute("aria-pressed", String(mine.has(b.dataset.v))));
+    $("#found-tag").textContent = `${mine.size} of ${skills.length}`;
+    const ev = Object.entries(evidence).filter(([s]) => mine.has(s));
+    $("#evidence").textContent = ev.length ? "Found in your resume: " + ev.map(([s, w]) => `${s} ("${w}")`).join(", ") + "." : "";
+    $("#r-results").hidden = !mine.size;
+    $("#r-empty").hidden = !!mine.size;
+    if (!mine.size) return;
+
+    // For every job: which of its listed skills are you missing?
+    const miss = jobs.map((r) => r.need.filter((s) => !mine.has(s)));
+    const full = jobs.filter((_, i) => !miss[i].length);
+    const near = miss.filter((m) => m.length === 1).length;
+    $("#r-full").textContent = num(full.length);
+    $("#r-full-sub").textContent = `${pct(full.length / jobs.length)} of the Data Analyst jobs we checked`;
+    $("#r-near").textContent = num(near);
+
+    // Job types: share of each type's jobs you fully match / are one skill away from.
+    const fit = typeOrder.map((type) => {
+      const idx = jobs.map((r, i) => (r.job_type === type ? i : -1)).filter((i) => i >= 0);
+      const f = idx.filter((i) => !miss[i].length).length, n1 = idx.filter((i) => miss[i].length === 1).length;
+      return { job_type: type, jobs: idx.length, ready_now: f / idx.length, one_skill_away: n1 / idx.length };
+    }).sort((a, b) => (b.ready_now + b.one_skill_away / 2) - (a.ready_now + a.one_skill_away / 2));
+    const best = fit[0];
+    $("#r-type").textContent = best.ready_now + best.one_skill_away > 0 ? best.job_type : "–";
+    $("#r-type-sub").textContent = best.ready_now + best.one_skill_away > 0
+      ? `you match ${pct(best.ready_now)} of these jobs, ${pct(best.one_skill_away)} more are one skill away` : "add more skills to see a fit";
+
+    const pay = full.map((r) => r.salary_lakh).filter((v) => v != null).sort((a, b) => a - b);
+    const med = pay.length ? (pay[(pay.length - 1) >> 1] + pay[pay.length >> 1]) / 2 : null;
+    $("#r-pay").innerHTML = pay.length >= 5 ? `₹${med.toFixed(1)}<small>L</small>` : "–";
+    $("#r-pay-sub").textContent = pay.length >= 5 ? `from ${pay.length} matching ads that list a salary` : "too few matching ads list a salary";
+
+    const fitOption = base({
+      grid: { left: 12, right: 50, top: 36, bottom: 8, containLabel: true },
+      legend: { top: 0, left: 0, icon: "circle", itemWidth: 10, textStyle: { color: C.ink2 } },
+      tooltip: { ...base().tooltip, trigger: "axis", axisPointer: { type: "shadow" }, valueFormatter: (v) => pct(v) },
+      xAxis: { type: "value", max: 1, ...axisStyle, axisLabel: { color: C.muted, formatter: (v) => pct(v) } },
+      yAxis: { type: "category", inverse: true, data: fit.map((r) => r.job_type), ...axisStyle, splitLine: { show: false }, axisLabel: { color: C.ink2 } },
+      series: [
+        { name: "You match now", type: "bar", stack: "fit", barMaxWidth: 20, data: fit.map((r) => r.ready_now), itemStyle: { color: C.blue } },
+        { name: "One skill away", type: "bar", stack: "fit", barMaxWidth: 20, data: fit.map((r) => r.one_skill_away), itemStyle: { color: C.aqua, borderRadius: [0, 6, 6, 0] },
+          label: { show: true, position: "right", color: C.ink2, formatter: (p) => pct(fit[p.dataIndex].ready_now + fit[p.dataIndex].one_skill_away) } },
+      ],
+    });
+    // The chart is created once (when it first scrolls into view), then just updated.
+    fitOpt = fitOption;
+    if (fitChart) fitChart.setOption(fitOpt, true);
+    else if (!fitPending) { fitPending = true; chart("c-fit", () => fitOpt, (c) => { fitChart = c; }); }
+    numbersTable("n-fit", fit);
+
+    // Missing skills, ranked by how many jobs each one alone would open up.
+    const gaps = skills.filter((s) => !mine.has(s)).map((s) => ({
+      skill: s, opens: miss.filter((m) => m.length === 1 && m[0] === s).length, demand: demand[s], signal: signal[s],
+    })).sort((a, b) => b.opens - a.opens || b.demand - a.demand);
+    const imp = (g) => (g.opens >= 0.05 * jobs.length ? "High" : g.opens >= 0.015 * jobs.length ? "Medium" : "Low");
+    const sig = { "leans higher pay": "Leans higher", "leans lower pay": "Leans lower", unclear: "Unclear", "not enough data": "Not enough data" };
+    $("#r-gap").innerHTML = gaps.length ? `<thead><tr><th scope="col">#</th><th scope="col">Skill</th><th scope="col">Importance</th><th scope="col">Jobs it opens</th>
+      <th scope="col">In % of DA jobs</th><th scope="col">Pay signal</th><th scope="col">Average time to learn</th></tr></thead><tbody>` +
+      gaps.map((g, i) => `<tr><td class="rank">${i + 1}</td><td class="sk"><strong>${esc(g.skill)}</strong></td><td data-l="Importance"><span class="imp imp-${imp(g).toLowerCase()}">${imp(g)}</span></td>
+        <td data-l="Jobs it opens">+${num(g.opens)}</td><td data-l="In % of DA jobs">${pct(g.demand)}</td><td data-l="Pay signal">${sig[g.signal] || "–"}</td>
+        <td data-l="Time to learn">${esc(LEARN_TIME[g.skill])}</td></tr>`).join("") + "</tbody>"
+      : `<tbody><tr><td>You list all 14 skills we track. Nothing missing.</td></tr></tbody>`;
+
+    // Towards senior: missing skills that senior jobs ask for more than junior jobs.
+    const up = skills.filter((s) => !mine.has(s) && lv[s]?.senior != null && lv[s]?.junior != null && lv[s].senior - lv[s].junior > 0.03)
+      .map((s) => ({ s, j: lv[s].junior, sr: lv[s].senior })).sort((a, b) => (b.sr - b.j) - (a.sr - a.j)).slice(0, 5);
+    $("#r-senior").innerHTML = up.length ? `<ul class="rise">${up.map((u) =>
+      `<li><strong>${esc(u.s)}</strong><span>${pct(u.j)} of junior jobs → ${pct(u.sr)} of senior jobs</span></li>`).join("")}</ul>`
+      : `<p style="margin:0;color:var(--ink-2)">You already list every skill that rises with seniority in our data.</p>`;
+  };
+
+  $("#my-skills").addEventListener("click", (e) => {
+    const b = e.target.closest(".chip"); if (!b) return;
+    mine.has(b.dataset.v) ? mine.delete(b.dataset.v) : mine.add(b.dataset.v);
+    update();
+  });
+
+  const analyze = (text) => {
+    evidence = findSkills(text);
+    mine.clear(); Object.keys(evidence).forEach((s) => mine.add(s));
+    update();
+    $("#t-mine").scrollIntoView({ behavior: REDUCED ? "auto" : "smooth", block: "start" });
+  };
+  $("#cv-go").addEventListener("click", () => {
+    const text = $("#cv-text").value.trim();
+    if (text) analyze(text); else $("#file-status").textContent = "Paste some text or choose a PDF first.";
+  });
+
+  const status = $("#file-status");
+  const readFile = async (file) => {
+    if (!file) return;
+    status.textContent = `Reading ${file.name}…`;
+    try {
+      const text = /\.pdf$/i.test(file.name) || file.type === "application/pdf" ? await pdfText(file) : await file.text();
+      if (text.trim().length < 30) throw new Error("no readable text (a scanned image?). Paste the text instead");
+      $("#cv-text").value = text.trim();
+      status.textContent = `${file.name}: read on your device. Nothing was uploaded.`;
+      analyze(text);
+    } catch (err) {
+      status.textContent = `Couldn't read ${file.name}: ${err.message}.`;
+    }
+  };
+  $("#cv-file").addEventListener("change", (e) => readFile(e.target.files[0]));
+  const drop = $("#drop");
+  ["dragenter", "dragover"].forEach((ev) => drop.addEventListener(ev, (e) => { e.preventDefault(); drop.classList.add("over"); }));
+  ["dragleave", "drop"].forEach((ev) => drop.addEventListener(ev, (e) => { e.preventDefault(); drop.classList.remove("over"); }));
+  drop.addEventListener("drop", (e) => readFile(e.dataTransfer.files[0]));
+  update();
+}
+
 function pageAbout(D) {
   const w = D.meta.data_window;
   $("#about-window").textContent = `${w.first_run.slice(0, 10)} to ${w.last_run.slice(0, 10)} (${w.runs} collection runs)`;
@@ -584,7 +981,7 @@ function pageAbout(D) {
 
 // ---------- boot ----------
 const PAGE_FN = { home: pageHome, skills: pageSkills, salary: pageSalary, types: pageTypes, places: pagePlaces,
-                  market: pageMarket, explore: pageExplore, about: pageAbout };
+                  market: pageMarket, explore: pageExplore, resume: pageResume, about: pageAbout };
 
 fetch("data/data.json")
   .then((r) => { if (!r.ok) throw new Error(`data/data.json: HTTP ${r.status}`); return r.json(); })
@@ -595,6 +992,7 @@ fetch("data/data.json")
       el.textContent = `${D.meta.data_window.first_run.slice(0, 10)} → ${D.meta.data_window.last_run.slice(0, 10)}`;
     });
     PAGE_FN[page]?.(D);
+    wireLit();
     wireMotion();
   })
   .catch((err) => {
