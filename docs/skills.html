@@ -24,8 +24,8 @@
 
   <div class="grid">
     <section class="card glass reveal" aria-labelledby="t-map">
-      <div class="card-head"><h3 id="t-map">The skill map: how common is it, and does it pay?</h3><span class="tag">same experience level &amp; city</span></div>
-      <p class="note" style="margin:0 0 8px">Right = asked for more often. Up = higher advertised pay. Colour = whether the pay signal held in all 4 versions of our model.</p>
+      <div class="card-head"><h3 id="t-map">Which skills matter most? Ranked</h3><span class="tag">share of Data Analyst jobs</span></div>
+      <p id="rank-summary" style="margin:0 0 14px;font-size:1.05rem;color:var(--ink-2)"></p>
       <div class="chart tall" id="c-map"></div>
       <p class="note" id="map-note"></p>
       <div id="n-map"></div>
@@ -46,12 +46,6 @@
         <div id="n-combos"></div>
       </section>
     </div>
-
-    <section class="card glass reveal" aria-labelledby="t-cooc">
-      <div class="card-head"><h3 id="t-cooc">How often each pair of skills appears in the same job</h3><span class="tag">diagonal = the skill on its own</span></div>
-      <div class="chart" style="height:560px" id="c-cooc"></div>
-      <div id="n-cooc"></div>
-    </section>
 
     <section class="card glass reveal" aria-labelledby="t-levels">
       <div class="card-head"><h3 id="t-levels">Junior vs senior: which skills rise with seniority?</h3></div>

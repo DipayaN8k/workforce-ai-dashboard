@@ -1,15 +1,15 @@
 skill,demand_share,pct_effect,pct_low,pct_high,verdict,postings_with_skill,pay_signal,certain,quadrant
-SQL,0.6343,21.3367,-18.5636,80.7866,no clear effect,66,leans higher pay,False,Common + leans higher pay
-Excel,0.4035,-14.2104,-37.8694,18.4579,no clear effect,46,leans lower pay,False,"Common, no pay edge"
-Python,0.4284,-19.8844,-46.1007,19.0833,no clear effect,34,unclear,False,"Common, no pay edge"
-Power BI,0.2632,14.7065,-30.7981,90.1331,no clear effect,32,leans higher pay,False,Common + leans higher pay
-Tableau,0.3001,-35.7704,-63.2402,12.2272,no clear effect,23,leans lower pay,False,"Common, no pay edge"
-Statistics,0.35,39.2025,-8.7115,112.2648,no clear effect,27,leans higher pay,False,Common + leans higher pay
-A/B testing,0.0268,,,,not enough data,4,not enough data,False,Not enough salary data
-Machine learning,0.084,,,,not enough data,4,not enough data,False,Not enough salary data
-ETL,0.1884,21.9512,-22.2908,91.3814,no clear effect,15,leans higher pay,False,Niche + leans higher pay
-AWS,0.1339,,,,not enough data,7,not enough data,False,Not enough salary data
-Azure,0.1551,,,,not enough data,8,not enough data,False,Not enough salary data
-Stakeholder mgmt,0.5716,33.3917,-12.6211,103.6343,no clear effect,37,leans higher pay,False,Common + leans higher pay
-Communication,0.6537,36.8325,-10.1925,108.4807,no clear effect,53,leans higher pay,False,Common + leans higher pay
-Generative AI,0.084,,,,not enough data,5,not enough data,False,Not enough salary data
+SQL,0.6343,1.3609,-29.8789,46.5184,no clear effect,117,leans higher pay,False,Common + leans higher pay
+Excel,0.4035,-2.7287,-22.387,21.9086,no clear effect,75,leans lower pay,False,"Common, no pay edge"
+Python,0.4284,7.9139,-21.3434,48.054,no clear effect,50,leans higher pay,False,Common + leans higher pay
+Power BI,0.2696,-12.9594,-37.2078,20.6529,no clear effect,79,unclear,False,"Common, no pay edge"
+Tableau,0.3001,3.1343,-23.9135,39.7973,no clear effect,45,leans higher pay,False,Common + leans higher pay
+Statistics,0.35,24.8311,-11.4144,75.9066,no clear effect,38,leans higher pay,False,Common + leans higher pay
+A/B testing,0.0268,,,,not enough data,12,not enough data,False,Not enough salary data
+Machine learning,0.0849,,,,not enough data,4,not enough data,False,Not enough salary data
+ETL,0.1884,-13.8153,-39.6364,23.0509,no clear effect,33,leans lower pay,False,"Niche, no pay edge"
+AWS,0.1339,,,,not enough data,10,not enough data,False,Not enough salary data
+Azure,0.1551,24.1448,-15.1285,81.5915,no clear effect,31,leans higher pay,False,Niche + leans higher pay
+Stakeholder mgmt,0.5716,1.4507,-24.2518,35.8746,no clear effect,77,unclear,False,"Common, no pay edge"
+Communication,0.6537,9.0907,-20.0997,48.9453,no clear effect,99,unclear,False,"Common, no pay edge"
+Generative AI,0.0849,,,,not enough data,6,not enough data,False,Not enough salary data

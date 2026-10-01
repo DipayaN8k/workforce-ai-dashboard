@@ -1,14 +1,16 @@
 {
-  "generated_at": "2026-09-29T13:09:07+00:00",
+  "generated_at": "2026-10-01T12:30:12+00:00",
   "data_window": {
     "first_run": "2026-09-27T13:20:33+00:00",
-    "last_run": "2026-09-29T13:02:14+00:00",
-    "runs": 4
+    "last_run": "2026-10-01T12:24:30+00:00",
+    "runs": 6
   },
-  "population": "Data Analyst-type postings in India with skills checked, excluding internships, posted within 1 year of last sighting",
+  "population": "Data Analyst postings in India with skills checked, excluding internships, posted within 1 year of last sighting",
+  "salary_population": "Data Analyst + close analyst titles (BI, business intelligence, Power BI, product, reporting, MIS, insights analyst), job title as a control",
   "postings": 1083,
-  "salaried_postings_main_model": 82,
-  "job_type_separation_score": 0.203,
+  "salaried_postings_main_model": 158,
+  "salaried_da_postings": 82,
+  "job_type_separation_score": 0.171,
   "skills": {
     "sql": "SQL",
     "excel": "Excel",

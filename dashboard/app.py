@@ -159,9 +159,10 @@ if page == PAGES[0]:  # Overview
     ct = csv("company_types.csv").set_index("company_type")
     f = st.columns(2)
     with f[0]:
-        st.info(f"**🧰 More tools ≠ more pay.** Business-facing Data Analyst jobs list ~3 skills yet pay "
-                f"**{jp.loc['Business-facing analyst', 'pct_vs_bi_dashboard']:+.0f}%** vs BI/dashboard jobs that list ~6–7 tools "
-                f"(same experience level and city).")
+        ty = csv("job_types.csv").set_index("job_type")
+        st.info(f"**🧰 More tools ≠ more pay.** BI/dashboard jobs list ~{ty.loc['BI / dashboard analyst', 'avg_skills_listed']:.0f} skills, "
+                f"business-facing jobs ~{ty.loc['Business-facing analyst', 'avg_skills_listed']:.0f}, yet advertised pay differs by only "
+                f"**{jp.loc['Business-facing analyst', 'pct_vs_bi_dashboard']:+.0f}%** (not a clear difference; same experience level and city).")
         st.info(f"**📈 Excel gets you in, stakeholder skills move you up.** Excel: {pct(lv.loc['Excel', 'junior'])} of junior "
                 f"jobs → {pct(lv.loc['Excel', 'senior'])} of senior. Stakeholder management: {pct(lv.loc['Stakeholder mgmt', 'junior'])} → "
                 f"{pct(lv.loc['Stakeholder mgmt', 'senior'])}.")

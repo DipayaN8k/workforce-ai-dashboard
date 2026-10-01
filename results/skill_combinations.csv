@@ -11,7 +11,7 @@ SQL + Excel,2,0.2696,292
 Statistics + Communication,2,0.2604,282
 SQL + Tableau,2,0.2595,281
 Excel + Stakeholder mgmt,2,0.2558,277
-SQL + Power BI,2,0.2336,253
+SQL + Power BI,2,0.2364,256
 Statistics + Stakeholder mgmt,2,0.2271,246
 Python + Statistics,2,0.2216,240
 SQL + Stakeholder mgmt + Communication,3,0.3435,372
@@ -28,4 +28,4 @@ Statistics + Stakeholder mgmt + Communication,3,0.1893,205
 SQL + Python + Tableau,3,0.1856,201
 SQL + Tableau + Stakeholder mgmt,3,0.1847,200
 Python + Statistics + Communication,3,0.181,196
-SQL + Excel + Stakeholder mgmt,3,0.1754,190
+SQL + Power BI + Communication,3,0.1764,191

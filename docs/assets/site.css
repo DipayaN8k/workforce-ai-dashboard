@@ -3,7 +3,7 @@
    D28: cinematic redesign inspired by the look of premium fintech sites:
    pure black canvas, big bold serif headlines, thin hairline cards, small
    letter-spaced capital labels, a ☰ full-screen menu and a floating
-   "analyze your resume" box. All art is drawn in code from our own data.
+   "analyze your resume" box (later removed, D31). All art is drawn in code from our own data.
    Charts keep the colour-blind-validated palette. */
 
 :root {
@@ -131,20 +131,6 @@ body[data-page="home"] .site-head:not(.solid) .head-btn { color: #f5f5f3; border
 .menu-list a:hover small, .menu-list a[aria-current="page"] small { opacity: 1; }
 .menu-foot { padding: 22px 0 28px; border-top: 1px solid rgba(255,255,255,.1); color: rgba(245,245,243,.55); font-size: .85rem; }
 body.menu-open { overflow: hidden; }
-
-/* the floating "analyze your resume" box, bottom-right on every page */
-.float-cta {
-  position: fixed; right: 24px; bottom: 24px; z-index: 55; display: flex; align-items: center; gap: 14px; padding: 12px 18px 12px 12px;
-  background: var(--canvas); color: var(--ink); border: 1px solid var(--hairline); text-decoration: none;
-  box-shadow: 0 16px 40px rgba(0,0,0,.35); transition: transform .3s var(--ease-out), border-color .2s, opacity .3s;
-}
-.float-cta:hover { transform: translateY(-3px); border-color: var(--muted); }
-.float-cta .mark { width: 46px; height: 46px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 3px; padding: 4px; background: var(--soft-fill); }
-.float-cta .mark i { background: var(--ink); opacity: .9; }
-.float-cta .mark i:nth-child(3n) { opacity: .25; }
-.float-cta .mark i:nth-child(5n) { background: var(--accent); opacity: 1; }
-.float-cta span { font-size: .95rem; line-height: 1.2; }
-.float-cta.hide { opacity: 0; pointer-events: none; transform: translateY(12px); }
 
 /* ---------- common blocks ---------- */
 .glass { background: var(--glass); border: 1px solid var(--glass-line); border-radius: var(--radius); }
@@ -468,8 +454,6 @@ textarea {
   .hero-map { min-height: 0; }
   .hero-map svg { height: auto; }
   .brand span { display: none; }
-  .float-cta { right: 12px; bottom: 12px; left: 12px; justify-content: center; padding: 10px 14px; }
-  .float-cta .mark { width: 34px; height: 34px; }
   .site-foot { grid-template-columns: 1fr; }
   .story { padding: 110px 0 80px; }
 }

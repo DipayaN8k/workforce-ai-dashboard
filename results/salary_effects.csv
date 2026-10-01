@@ -1,57 +1,57 @@
 model,skill,postings_with_skill,sample_size,pct_effect,pct_low,pct_high,p_value,verdict
-"main: posted within 1 year, with controls",SQL,66,82,21.3367,-18.5636,80.7866,0.3418,no clear effect
-"main: posted within 1 year, with controls",Excel,46,82,-14.2104,-37.8694,18.4579,0.3518,no clear effect
-"main: posted within 1 year, with controls",Python,34,82,-19.8844,-46.1007,19.0833,0.2729,no clear effect
-"main: posted within 1 year, with controls",Power BI,32,82,14.7065,-30.7981,90.1331,0.5946,no clear effect
-"main: posted within 1 year, with controls",Tableau,23,82,-35.7704,-63.2402,12.2272,0.12,no clear effect
-"main: posted within 1 year, with controls",Statistics,27,82,39.2025,-8.7115,112.2648,0.1244,no clear effect
-"main: posted within 1 year, with controls",A/B testing,4,82,,,,,not enough data
-"main: posted within 1 year, with controls",Machine learning,4,82,,,,,not enough data
-"main: posted within 1 year, with controls",ETL,15,82,21.9512,-22.2908,91.3814,0.3881,no clear effect
-"main: posted within 1 year, with controls",AWS,7,82,,,,,not enough data
-"main: posted within 1 year, with controls",Azure,8,82,,,,,not enough data
-"main: posted within 1 year, with controls",Stakeholder mgmt,37,82,33.3917,-12.6211,103.6343,0.1819,no clear effect
-"main: posted within 1 year, with controls",Communication,53,82,36.8325,-10.1925,108.4807,0.1444,no clear effect
-"main: posted within 1 year, with controls",Generative AI,5,82,,,,,not enough data
-check: all posting ages,SQL,139,183,22.8134,-5.5314,59.6629,0.1248,no clear effect
-check: all posting ages,Excel,94,183,-11.5233,-26.7904,6.9275,0.2052,no clear effect
-check: all posting ages,Python,88,183,0.791,-18.7634,25.0523,0.9429,no clear effect
-check: all posting ages,Power BI,65,183,16.0196,-9.3638,48.5118,0.2382,no clear effect
-check: all posting ages,Tableau,61,183,-11.0007,-32.6369,17.5849,0.4122,no clear effect
-check: all posting ages,Statistics,64,183,2.0069,-20.3181,30.5866,0.8747,no clear effect
-check: all posting ages,A/B testing,11,183,,,,,not enough data
-check: all posting ages,Machine learning,22,183,,,,,not enough data
-check: all posting ages,ETL,27,183,17.9311,-10.3404,55.1171,0.2382,no clear effect
-check: all posting ages,AWS,16,183,,,,,not enough data
-check: all posting ages,Azure,15,183,,,,,not enough data
-check: all posting ages,Stakeholder mgmt,75,183,17.3684,-4.8349,44.7519,0.1344,no clear effect
-check: all posting ages,Communication,114,183,2.6061,-17.26,27.242,0.8147,no clear effect
-check: all posting ages,Generative AI,5,183,,,,,not enough data
-check: without the monthly x12 salaries,SQL,63,78,26.8229,-17.1037,94.0262,0.2734,no clear effect
-check: without the monthly x12 salaries,Excel,43,78,-10.0335,-35.7956,26.0656,0.539,no clear effect
-check: without the monthly x12 salaries,Python,33,78,-21.5289,-47.3867,17.0372,0.2346,no clear effect
-check: without the monthly x12 salaries,Power BI,31,78,5.8558,-37.1993,78.4287,0.8308,no clear effect
-check: without the monthly x12 salaries,Tableau,22,78,-35.5684,-63.4728,13.6532,0.129,no clear effect
-check: without the monthly x12 salaries,Statistics,24,78,49.1449,-4.5751,133.1068,0.0794,no clear effect
-check: without the monthly x12 salaries,A/B testing,4,78,,,,,not enough data
-check: without the monthly x12 salaries,Machine learning,4,78,,,,,not enough data
-check: without the monthly x12 salaries,ETL,14,78,24.3112,-21.374,96.5415,0.3518,no clear effect
-check: without the monthly x12 salaries,AWS,7,78,,,,,not enough data
-check: without the monthly x12 salaries,Azure,8,78,,,,,not enough data
-check: without the monthly x12 salaries,Stakeholder mgmt,37,78,27.6982,-14.5583,90.8532,0.233,no clear effect
-check: without the monthly x12 salaries,Communication,53,78,28.3417,-17.5213,99.7072,0.2687,no clear effect
-check: without the monthly x12 salaries,Generative AI,4,78,,,,,not enough data
-check: no experience/city controls,SQL,66,82,29.5319,-16.1034,99.9902,0.243,no clear effect
-check: no experience/city controls,Excel,46,82,-14.8178,-38.6588,18.2892,0.3384,no clear effect
-check: no experience/city controls,Python,34,82,-8.1708,-40.3505,41.369,0.6986,no clear effect
-check: no experience/city controls,Power BI,32,82,16.4719,-27.217,86.3855,0.525,no clear effect
-check: no experience/city controls,Tableau,23,82,-37.7302,-64.4017,8.9245,0.0968,no clear effect
-check: no experience/city controls,Statistics,27,82,26.7792,-18.6385,97.55,0.2944,no clear effect
-check: no experience/city controls,A/B testing,4,82,,,,,not enough data
-check: no experience/city controls,Machine learning,4,82,,,,,not enough data
-check: no experience/city controls,ETL,15,82,14.1299,-26.4566,77.1148,0.5556,no clear effect
-check: no experience/city controls,AWS,7,82,,,,,not enough data
-check: no experience/city controls,Azure,8,82,,,,,not enough data
-check: no experience/city controls,Stakeholder mgmt,37,82,31.6972,-14.7117,103.359,0.2142,no clear effect
-check: no experience/city controls,Communication,53,82,42.5897,-5.6448,115.4819,0.0922,no clear effect
-check: no experience/city controls,Generative AI,5,82,,,,,not enough data
+"main: posted within 1 year, with controls",SQL,117,158,1.3609,-29.8789,46.5184,0.9427,no clear effect
+"main: posted within 1 year, with controls",Excel,75,158,-2.7287,-22.387,21.9086,0.8102,no clear effect
+"main: posted within 1 year, with controls",Python,50,158,7.9139,-21.3434,48.054,0.6369,no clear effect
+"main: posted within 1 year, with controls",Power BI,79,158,-12.9594,-37.2078,20.6529,0.4048,no clear effect
+"main: posted within 1 year, with controls",Tableau,45,158,3.1343,-23.9135,39.7973,0.8424,no clear effect
+"main: posted within 1 year, with controls",Statistics,38,158,24.8311,-11.4144,75.9066,0.205,no clear effect
+"main: posted within 1 year, with controls",A/B testing,12,158,,,,,not enough data
+"main: posted within 1 year, with controls",Machine learning,4,158,,,,,not enough data
+"main: posted within 1 year, with controls",ETL,33,158,-13.8153,-39.6364,23.0509,0.4132,no clear effect
+"main: posted within 1 year, with controls",AWS,10,158,,,,,not enough data
+"main: posted within 1 year, with controls",Azure,31,158,24.1448,-15.1285,81.5915,0.265,no clear effect
+"main: posted within 1 year, with controls",Stakeholder mgmt,77,158,1.4507,-24.2518,35.8746,0.923,no clear effect
+"main: posted within 1 year, with controls",Communication,99,158,9.0907,-20.0997,48.9453,0.5839,no clear effect
+"main: posted within 1 year, with controls",Generative AI,6,158,,,,,not enough data
+check: all posting ages,SQL,249,347,7.6854,-11.5471,31.0995,0.4607,no clear effect
+check: all posting ages,Excel,154,347,-7.3551,-18.9955,5.9581,0.2648,no clear effect
+check: all posting ages,Python,126,347,6.6733,-9.9591,26.3781,0.4551,no clear effect
+check: all posting ages,Power BI,158,347,0.2081,-15.5595,18.9199,0.981,no clear effect
+check: all posting ages,Tableau,108,347,11.0847,-7.3365,33.168,0.2558,no clear effect
+check: all posting ages,Statistics,92,347,5.3476,-12.1499,26.33,0.574,no clear effect
+check: all posting ages,A/B testing,23,347,,,,,not enough data
+check: all posting ages,Machine learning,26,347,,,,,not enough data
+check: all posting ages,ETL,59,347,-7.3745,-23.6106,12.3124,0.4359,no clear effect
+check: all posting ages,AWS,23,347,,,,,not enough data
+check: all posting ages,Azure,53,347,11.3486,-9.7731,37.4148,0.3165,no clear effect
+check: all posting ages,Stakeholder mgmt,145,347,9.1124,-6.6319,27.5115,0.2727,no clear effect
+check: all posting ages,Communication,213,347,-0.7046,-15.0549,16.07,0.9293,no clear effect
+check: all posting ages,Generative AI,7,347,,,,,not enough data
+check: without the monthly x12 salaries,SQL,112,152,2.4478,-29.8083,49.5271,0.9002,no clear effect
+check: without the monthly x12 salaries,Excel,71,152,-4.1819,-23.7412,20.3941,0.7138,no clear effect
+check: without the monthly x12 salaries,Python,48,152,8.4242,-21.0102,48.827,0.6167,no clear effect
+check: without the monthly x12 salaries,Power BI,77,152,-18.8087,-41.7392,13.147,0.2185,no clear effect
+check: without the monthly x12 salaries,Tableau,44,152,2.0361,-25.1866,39.1644,0.8987,no clear effect
+check: without the monthly x12 salaries,Statistics,34,152,43.0173,-0.0519,104.6455,0.0503,no clear effect
+check: without the monthly x12 salaries,A/B testing,11,152,,,,,not enough data
+check: without the monthly x12 salaries,Machine learning,4,152,,,,,not enough data
+check: without the monthly x12 salaries,ETL,32,152,-13.0064,-39.4822,25.0523,0.4517,no clear effect
+check: without the monthly x12 salaries,AWS,10,152,,,,,not enough data
+check: without the monthly x12 salaries,Azure,31,152,27.1162,-13.4812,86.7632,0.2216,no clear effect
+check: without the monthly x12 salaries,Stakeholder mgmt,77,152,-2.8901,-27.1752,29.4933,0.8417,no clear effect
+check: without the monthly x12 salaries,Communication,98,152,6.2801,-22.5076,45.7621,0.7055,no clear effect
+check: without the monthly x12 salaries,Generative AI,5,152,,,,,not enough data
+check: no experience/city controls,SQL,117,158,6.3685,-24.6678,50.1913,0.7258,no clear effect
+check: no experience/city controls,Excel,75,158,-6.2849,-26.3035,19.1714,0.5965,no clear effect
+check: no experience/city controls,Python,50,158,7.4961,-21.0409,46.3467,0.6461,no clear effect
+check: no experience/city controls,Power BI,79,158,-15.4579,-38.3362,15.9087,0.297,no clear effect
+check: no experience/city controls,Tableau,45,158,8.3402,-19.6151,46.0174,0.5988,no clear effect
+check: no experience/city controls,Statistics,38,158,15.6369,-18.0886,63.2483,0.4089,no clear effect
+check: no experience/city controls,A/B testing,12,158,,,,,not enough data
+check: no experience/city controls,Machine learning,4,158,,,,,not enough data
+check: no experience/city controls,ETL,33,158,-20.5764,-42.5139,9.7327,0.1625,no clear effect
+check: no experience/city controls,AWS,10,158,,,,,not enough data
+check: no experience/city controls,Azure,31,158,44.7597,4.1747,101.1562,0.0276,higher pay
+check: no experience/city controls,Stakeholder mgmt,77,158,1.6226,-23.1749,34.424,0.9102,no clear effect
+check: no experience/city controls,Communication,99,158,7.7652,-19.8245,44.8489,0.6202,no clear effect
+check: no experience/city controls,Generative AI,6,158,,,,,not enough data

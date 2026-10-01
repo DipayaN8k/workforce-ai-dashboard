@@ -92,10 +92,6 @@ function renderChrome(page, data) {
        <ul class="menu-list">${links}</ul>
        <div class="menu-foot">Data Analyst jobs in India, measured. Built by Dipayan &amp; Sayak.</div>
      </div>`);
-  if (page !== "resume") {
-    document.body.insertAdjacentHTML("beforeend",
-      `<a class="float-cta" id="float-cta" href="resume.html"><span class="mark" aria-hidden="true">${"<i></i>".repeat(16)}</span><span>analyze<br>your resume</span></a>`);
-  }
   wireThemeToggle();
   wireMenu();
   wireHeader(page);
@@ -129,16 +125,8 @@ function wireMenu() {
 
 // Header turns solid once you scroll; on the home page that happens after the hero.
 function wireHeader(page) {
-  const head = $("#site-head"), cta = $("#float-cta");
-  const onScroll = () => {
-    const limit = page === "home" ? window.innerHeight * 0.85 : 10;
-    head.classList.toggle("solid", window.scrollY > limit);
-    // the floating box stays out of the way on the hero and over the footer
-    if (cta) {
-      const nearEnd = window.innerHeight + window.scrollY > document.body.scrollHeight - 260;
-      cta.classList.toggle("hide", (page === "home" && window.scrollY < window.innerHeight * 0.6) || nearEnd);
-    }
-  };
+  const head = $("#site-head");
+  const onScroll = () => head.classList.toggle("solid", window.scrollY > (page === "home" ? window.innerHeight * 0.85 : 10));
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 }
@@ -522,8 +510,13 @@ function pageHome(D) {
   const ct = Object.fromEntries(t.company_types.map((r) => [r.company_type, r]));
   const leans = t.skill_quadrant.filter((r) => r.pay_signal === "leans higher pay").map((r) => r.skill);
   const cards = [
-    [signed(jp["Business-facing analyst"]?.pct_vs_bi_dashboard), "More tools doesn't mean more pay",
-     "Business-facing Data Analyst jobs list about 3 skills, yet pay this much more than BI/dashboard jobs listing 6–7 tools, at the same experience level and city.", "job-types.html"],
+    (() => {  // computed from the data, so it stays true when the data changes (D32)
+      const ty = Object.fromEntries(t.job_types.map((r) => [r.job_type, r]));
+      const bi = ty["BI / dashboard analyst"], bf = ty["Business-facing analyst"], gap = jp["Business-facing analyst"];
+      const clear = gap && (gap.pct_low > 0 || gap.pct_high < 0);
+      return [`${Math.round(bi?.avg_skills_listed)} vs ${Math.round(bf?.avg_skills_listed)}`, "More tools doesn't mean more pay",
+        `BI/dashboard jobs list about ${Math.round(bi?.avg_skills_listed)} skills, business-facing jobs about ${Math.round(bf?.avg_skills_listed)}, yet their advertised pay differs by only ${signed(gap?.pct_vs_bi_dashboard)}${clear ? "" : " (not a clear difference)"}, at the same experience level and city.`, "job-types.html"];
+    })(),
     [`${pct(lv.Excel?.junior)} → ${pct(lv.Excel?.senior)}`, "Excel gets you in, stakeholder skills move you up",
      `Excel shows up in ${pct(lv.Excel?.junior)} of junior jobs but ${pct(lv.Excel?.senior)} of senior ones. Stakeholder management rises from ${pct(lv["Stakeholder mgmt"]?.junior)} to ${pct(lv["Stakeholder mgmt"]?.senior)}.`, "skills.html"],
     [String(leans.length), "Skills that lean toward higher pay",
@@ -542,21 +535,25 @@ function pageSkills(D) {
   const t = D.tables;
   const q = t.skill_quadrant.filter((r) => r.pct_effect != null);
   const colorOf = { "leans higher pay": C.blue, "leans lower pay": C.red, unclear: C.neutral };
+  // Skill ranking (D30): the simplest reading for any visitor. One bar per skill, ranked
+  // #1 at the top by how often jobs ask for it; the top 3 are highlighted; the bar label
+  // says in plain words whether jobs with that skill advertise more or less pay.
+  const ranked = [...t.skill_quadrant].sort((a, b) => b.demand_share - a.demand_share);
+  const payWord = { "leans higher pay": "tends to pay more", "leans lower pay": "tends to pay less", unclear: "no clear pay difference" };
+  const top3 = ranked.slice(0, 3).map((r) => r.skill);
+  $("#rank-summary").innerHTML = `<strong>${esc(top3[0])}</strong> is the most asked-for skill (${pct(ranked[0].demand_share)} of Data Analyst jobs),
+    then <strong>${esc(top3[1])}</strong> (${pct(ranked[1].demand_share)}) and <strong>${esc(top3[2])}</strong> (${pct(ranked[2].demand_share)}). Learn these first.`;
   chart("c-map", base({
-    grid: { left: 12, right: 30, top: 56, bottom: 40, containLabel: true },
-    legend: { top: 0, right: 0, icon: "circle", itemWidth: 10, textStyle: { color: C.ink2 } },
-    tooltip: { ...base().tooltip, formatter: (p) => `<b>${esc(p.data.name)}</b><br>in ${pct(p.data.value[0])} of jobs<br>pay ${signed(p.data.value[1] * 100)}
-      (95% range ${signed(p.data.lo)} to ${signed(p.data.hi)})<br>${p.data.n} salaried jobs have it` },
-    xAxis: { type: "value", name: "share of jobs asking for it", nameLocation: "middle", nameGap: 30, nameTextStyle: { color: C.muted }, ...axisStyle, axisLabel: { color: C.muted, formatter: (v) => pct(v) } },
-    yAxis: { type: "value", name: "pay difference", nameTextStyle: { color: C.muted }, ...axisStyle, axisLabel: { color: C.muted, formatter: (v) => signed(v * 100) } },
-    series: Object.keys(colorOf).map((sig) => ({
-      name: sig, type: "scatter", symbolSize: 16,
-      itemStyle: { color: colorOf[sig], borderColor: C.surface, borderWidth: 2 },
-      label: { show: true, position: "top", color: C.ink2, formatter: (p) => p.data.name },
-      data: q.filter((r) => r.pay_signal === sig).map((r) => ({ name: r.skill, value: [r.demand_share, r.pct_effect / 100], lo: r.pct_low, hi: r.pct_high, n: r.postings_with_skill })),
-      markLine: sig === "leans higher pay" ? { silent: true, symbol: "none", lineStyle: { color: C.mark, type: "solid" }, label: { show: false },
-        data: [{ yAxis: 0 }, { xAxis: 0.25 }] } : undefined,
-    })),
+    grid: { left: 12, right: 150, top: 8, bottom: 8, containLabel: true },
+    tooltip: { ...base().tooltip, trigger: "item", formatter: (p) => { const r = ranked[p.dataIndex];
+      return `<b>#${p.dataIndex + 1} ${esc(r.skill)}</b><br>asked in ${pct(r.demand_share)} of jobs<br>${payWord[r.pay_signal] ? payWord[r.pay_signal] + ` (${signed(r.pct_effect)})` : "pay: not enough data"}`; } },
+    xAxis: { type: "value", max: 1, show: false },
+    yAxis: { type: "category", inverse: true, data: ranked.map((r, i) => `${i + 1}.  ${r.skill}`), ...axisStyle, axisLine: { show: false },
+             splitLine: { show: false }, axisLabel: { color: C.ink, fontSize: 13 } },
+    series: [{ type: "bar", barMaxWidth: 20,
+      data: ranked.map((r, i) => ({ value: r.demand_share, itemStyle: { color: i < 3 ? C.accent : (DARK ? "rgba(255,255,255,.28)" : "rgba(10,10,10,.28)"), borderRadius: [0, 4, 4, 0] } })),
+      label: { show: true, position: "right", color: C.ink2, fontSize: 12,
+        formatter: (p) => { const r = ranked[p.dataIndex], w = payWord[r.pay_signal]; return `${pct(r.demand_share)}${w ? "  ·  " + w : ""}`; } } }],
   }));
   numbersTable("n-map", t.skill_quadrant, ["skill", "demand_share", "pct_effect", "pct_low", "pct_high", "pay_signal", "certain", "quadrant"]);
   $("#map-note").textContent = "Not enough salaried jobs to measure pay for: " + t.skill_quadrant.filter((r) => r.pct_effect == null).map((r) => r.skill).join(", ") + ".";
@@ -574,9 +571,6 @@ function pageSkills(D) {
   });
 
   numbersTable("n-combos", t.skill_combinations);
-  const co = t.skill_cooccurrence, names = co.map((r) => r.skill);
-  numbersTable("n-cooc", co);
-  chart("c-cooc", heatOption(names, names, co.map((r) => names.map((n) => r[n]))));
 
   const lv = t.skill_demand_by_level.filter((r) => ["junior", "mid", "senior"].includes(r.experience_level));
   const skills = [...new Set(lv.map((r) => r.skill))];
