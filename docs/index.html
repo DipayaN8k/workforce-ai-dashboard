@@ -118,7 +118,7 @@
       <p>Five steps from raw job ads to the charts on this site. Every decision is logged, with its reasoning.</p>
     </div>
     <ol class="steps" style="list-style:none;padding:0;margin:0">
-      <li class="step reveal"><div class="n">01</div><h3>Collect</h3><p>Weekly runs pull every open analyst posting in India from the Adzuna API and public company job boards.</p><div class="tech">Python, GitHub Actions</div></li>
+      <li class="step reveal"><div class="n">01</div><h3>Collect</h3><p>Scheduled runs pulled every open analyst posting in India from the Adzuna API and public company job boards (27 Sep – 1 Oct 2026).</p><div class="tech">Python, GitHub Actions</div></li>
       <li class="step reveal"><div class="n">02</div><h3>Store</h3><p>Raw snapshots are saved untouched, then loaded into a SQL database that tracks each posting over time.</p><div class="tech">SQLite, SQL</div></li>
       <li class="step reveal"><div class="n">03</div><h3>Clean</h3><p>Salaries in consistent units, experience levels, cities, and one name per company.</p><div class="tech">pandas</div></li>
       <li class="step reveal"><div class="n">04</div><h3>Analyse</h3><p>Skill demand, a salary regression at the same experience and city, and clustering into job types.</p><div class="tech">statsmodels, scikit-learn</div></li>
